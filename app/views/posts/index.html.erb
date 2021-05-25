@@ -1,0 +1,50 @@
+  <div class="top_image">
+    <img src="<%= "/images/title.jpg" %>">
+  </div>
+  <ul class="top_menu">
+    <li>
+      <%= link_to("どういうサイト？", root_path, {class: "link"}) %>
+    </li>
+    <li>
+      <%= link_to("新規投稿", root_path, {class: "link"}) %>
+    </li>
+    <% if user_signed_in? %>
+    <li>
+      <%= link_to("ログアウト", root_path, {class: "link"}) %>
+    </li>
+    <% else %>
+    <li>
+      <%= link_to("新規登録", root_path, {class: "link"}) %>
+    </li>
+    <li>
+      <%= link_to("ログイン", root_path, {class: "link"}) %>
+    </li>
+    <% end %>
+  </ul>
+
+  <% if flash[:notice] %>
+    <div class="flash_message">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
+
+  <% if user_signed_in? %>
+    <P class="current_user_name">現在ログイン中のユーザー:  <%= current_user.nickname %></p>
+    <%= link_to("マイページ", root_path, {class: "link"}) %>
+  <% end %> 
+
+  <div class="post_index">
+    <% @posts.each do |post| %>
+      <div class="post_container">
+        <%= link_to("/posts/#{post.id}") do %>
+          <img src="<%= "/images/nikibikun.jpg" %>" class="nikibikun_image">
+        <% end %>
+        <div class="post_title">
+          <b><%= post.title %></b>
+        </div>
+        <div class="post_text">
+          <%= post.text %>
+        </div>
+      </div>
+    <% end %>
+  </div>

@@ -1,0 +1,30 @@
+<div class="new_posts_form">
+  <%= form_with model: @user, url: posts_path, class:"new_posts_form_contents", local: true do |f| %>
+  
+    <h1>新規投稿フォーム</h1>
+
+    <%# <%= render 'shared/error_messages', model: f.object %>
+
+    <div class="new_posts_main">
+     <h3 class="posts_title">画像を選択して下さい
+      <span class="indispensable">任意</span>
+
+      <h3 class="posts_title">カテゴリを選択してください
+      <span class="indispensable">必須</span>
+      <%# <%= f.collection_select%>
+
+      <h3 class="posts_title">タイトルを入力してください
+      <span class="indispensable">必須</span></h3>
+      <%= f.text_area :title, class:"posts_title_input_form", placeholder:"タイトル （必須 40字まで）", maxlength:"40" %>
+
+      <h3 class="posts_title">投稿内容を入力してください
+      <span class="indispensable">必須</span></h3>
+      <%= f.text_area :text, class:"posts_text_input_form", placeholder:"投稿内容 （必須 2000字まで）", maxlength:"2000" %>
+
+      <div class="posts_btn_contents">
+      <%= f.submit "投稿する" ,class:"posts_btn" %>
+      <%= link_to 'トップページに戻る', root_path, class: "move_to_root_path" %>
+      </div>
+    </div>
+  <% end %>
+</div>

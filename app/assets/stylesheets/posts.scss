@@ -69,3 +69,71 @@
   overflow: scroll;
   margin-top: 10px;
 }
+
+// posts new
+
+.new_posts_form{
+  // background-color: yellowgreen;
+  background-image: url("/images/background.PNG");
+  background-size: cover;
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+  height:100%;
+  min-width:100%;
+}
+
+.new_posts_form_contents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new_posts_form_contents h1{
+  background-color: #2a2a2a;
+  border-radius: 10px 100px / 120px;
+  padding: 20px 80px;
+  color: white;
+  margin-top: 80px;
+}
+
+.posts_title{
+  background-color: #2a2a2a;
+  border-radius: 10px 100px / 120px;
+  padding: 17px 80px;
+  color: white;
+  margin-top: 40px;
+}
+
+.indispensable{
+  font-weight: lighter;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.posts_title_input_form{
+  width: 800px;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0,0,0,.25);
+  margin-top: 15px;
+}
+
+.posts_text_input_form{
+  width: 800px;
+  height: 350px;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0,0,0,.25);
+  margin-top: 15px;
+}
+
+.posts_btn{
+  border: none;
+  font-size: 20px;
+  color: white;
+  background-color: #1fb5bf;
+  padding: 12px 80px;
+  border-radius: 10px 100px / 120px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 100px;
+}

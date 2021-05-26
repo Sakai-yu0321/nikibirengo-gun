@@ -1,0 +1,19 @@
+<div class="user_my_page">
+  <div class="user_my_page_title">
+    <h1><%= @user.nickname %>のユーザーページ</h1>
+  </div>
+  <div class="user_my_page_main">
+    <div class="user_posts">
+      <h3>投稿一覧</h3>
+    </div>
+    <div class="user_post">
+    </div>
+    <div class="liked_posts">
+      <h3>いいねした投稿</h3>
+    </div>
+    <div class="user_like">
+    <div>
+  </div>
+</div>
+<%= link_to 'トップページに戻る', root_path, class: "move_to_root_path" %>
+<%# <%= link_to 'アカウントを削除',  user_registration_path(current_user.id), method: :delete, class: "move_to_user_destroy" %> 

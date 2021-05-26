@@ -1,0 +1,17 @@
+.remember_me_check_box{
+  border: gray;
+  margin-top: 20px;
+}
+
+.remember_me{
+  color: gray;
+}
+
+.moving_to_form{
+  font-size:  13px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

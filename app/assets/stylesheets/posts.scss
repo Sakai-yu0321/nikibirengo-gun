@@ -1,0 +1,71 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// posts index
+
+.top_image{
+  display: flex;
+  justify-content: center;
+}
+
+.top_image img{
+  width: 350px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.top_menu{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 200px 0px 200px;
+  padding: 40px 40px 40px 90px;
+  background-color: #2a2a2a;
+  border-radius: 20px 100px / 120px;
+}
+
+.link{
+  text-decoration: none;
+  color: white ;
+}
+
+
+.flash_message{
+  background-color: rgba(31,181,191,0.2);
+  color: #2a2a2a;
+  padding: 15px;
+  text-align: center;
+  margin: 0 300px 0px 300px;
+  border-radius:  0 0 20px 20px;
+}
+
+
+.post_index{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 200px;
+}
+
+.post_container{
+  margin-right: 100px;
+  width: 300px;
+  height: 300px;
+}
+
+.nikibikun_image{
+  width: 200px;
+}
+
+.post_title{
+  white-space:nowrap;
+  overflow: scroll;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.post_text{
+  white-space:nowrap;
+  overflow: scroll;
+  margin-top: 10px;
+}

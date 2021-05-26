@@ -14,11 +14,12 @@
 
 ## posts
 
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
-| title  | string     | null: false                    |
-| text   | text       | null: false                    |
-| user   | references | null: false, foreign_key :true |
+| Column      | Type       | Options                        |
+| ----------- | ---------- | ------------------------------ |
+| category_id | integer    | null: false                    |
+| title       | string     | null: false                    |
+| text        | text       | null: false                    |
+| user        | references | null: false, foreign_key :true |
 
 
 ### Association

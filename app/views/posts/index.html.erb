@@ -7,7 +7,7 @@
     </li>
     <% if user_signed_in? %>
     <li>
-      <%= link_to '新規投稿', root_path, class: "link" %>
+      <%= link_to '新規投稿', new_post_path, class: "link" %>
     </li>
     <li>
       <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "link" %>
@@ -34,8 +34,12 @@
   <div class="post_index">
     <% @posts.each do |post| %>
       <div class="post_container">
-        <%= link_to("/posts/#{post.id}") do %>
-          <img src="<%= "/images/nikibikun.jpg" %>" class="nikibikun_image">
+        <%= link_to(root_path) do %>
+          <%# <% if post.image != nil %> 
+            <img src="<%= "/images/nikibikun.jpg" %>" class="nikibikun_image">
+          <%# <% else %>
+            <%# <%= image_tag post.image, class: 'nikibikun_image' if post.image.attached? %> 
+          <%# <% end %> 
         <% end %>
         <div class="post_title">
           <b><%= post.title %></b>

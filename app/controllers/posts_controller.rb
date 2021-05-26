@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_action :set_post, only: []
 
   def index
-    @posts = Post.all
+    @posts = Post.order("created_at DESC")
   end
 
   def new
@@ -12,7 +12,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
-      redirect_to :root_path
+      redirect_to root_path
       flash[:notice] = "投稿が完了しました"
     else
       render :new
@@ -26,6 +26,6 @@ class PostsController < ApplicationController
   end
 
   def post_params
-    params.require(:post).permit(:title, :text).merge(user_id: current_user.id)
+    params.require(:post).permit(:category_id, :title, :text).merge(user_id: current_user.id)
   end
 end

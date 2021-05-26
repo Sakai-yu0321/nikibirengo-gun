@@ -104,18 +104,26 @@
   margin-top: 40px;
 }
 
-.category_select{
+.indispensable{
+  font-weight: lighter;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.posts_image{
   border: none;
-  width: 800px;
+  width: 240px;
   border: none;
   box-shadow: 0px 2px 5px rgba(0,0,0,.25);
   margin-top: 15px;
 }
 
-.indispensable{
-  font-weight: lighter;
-  font-size: 13px;
-  margin-left: 10px;
+.category_select{
+  border: none;
+  width: 400px;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0,0,0,.25);
+  margin-top: 15px;
 }
 
 .posts_title_input_form{
@@ -123,6 +131,7 @@
   border: none;
   box-shadow: 0px 2px 5px rgba(0,0,0,.25);
   margin-top: 15px;
+  
 }
 
 .posts_text_input_form{

@@ -35,7 +35,11 @@
     <% @posts.each do |post| %>
       <div class="post_container">
         <%= link_to(root_path) do %>
-          <img src="<%= "/images/nikibikun.jpg" %>" class="nikibikun_image">
+          <%# <% if post.image != nil %> 
+            <img src="<%= "/images/nikibikun.jpg" %>" class="nikibikun_image">
+          <%# <% else %>
+            <%# <%= image_tag post.image, class: 'nikibikun_image' if post.image.attached? %> 
+          <%# <% end %> 
         <% end %>
         <div class="post_title">
           <b><%= post.title %></b>

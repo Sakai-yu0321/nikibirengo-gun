@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .user_my_page{
+  text-align: center;
+}
+
+.user_my_page_container{
   margin-top: 80px;
   margin-bottom: 200px;
   display: flex;
@@ -17,7 +21,7 @@
   color: white;
 }
 
-.user_posts{
+.user_posts_index{
   background-color: #2a2a2a;
   border-radius: 10px 100px / 120px;
   padding: 17px 80px;
@@ -33,19 +37,13 @@
   overflow: scroll;
 }
 
-.user_post_title{
-  border-bottom: 3px dotted lightgray;
-}
-
 .user_post_category_and_title{
+  border-bottom: 3px dotted lightgray;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
-}
-
-.user_post_category_and_title p{
-  border-bottom: 1px solid #2a2a2a;
+  padding: 20px;
+  color: #2a2a2a;
 }
 
 .liked_posts{
@@ -64,16 +62,9 @@
   overflow: scroll;
 }
 
-.move_to_root_path{
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  background-color: #1fb5bf;
-  padding: 10px 20px;
-  border-radius: 10px 100px / 120px;
-  display: flex;
-  justify-content: center;
-  margin: 80px 200px;
+.my_page_to_root_path{
+  margin-top: 100px;
+
 }
 
 .move_to_user_destroy{

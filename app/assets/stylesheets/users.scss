@@ -13,14 +13,14 @@
 .user_my_page_title{
   background-color: #2a2a2a;
   border-radius: 10px 100px / 120px;
-  padding: 5px 80px 5px 80px;
+  padding: 19px 80px;
   color: white;
 }
 
 .user_posts{
   background-color: #2a2a2a;
   border-radius: 10px 100px / 120px;
-  padding: 15px 80px;
+  padding: 17px 80px;
   color: white;
   margin-top: 40px;
 }
@@ -33,10 +33,25 @@
   overflow: scroll;
 }
 
+.user_post_title{
+  border-bottom: 3px dotted lightgray;
+}
+
+.user_post_category_and_title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.user_post_category_and_title p{
+  border-bottom: 1px solid #2a2a2a;
+}
+
 .liked_posts{
   background-color: #2a2a2a;
   border-radius: 10px 100px / 120px;
-  padding: 15px 80px;
+  padding: 17px 80px;
   color: white;
   margin-top: 40px;
 }
@@ -54,7 +69,7 @@
   font-size: 20px;
   color: white;
   background-color: #1fb5bf;
-  padding: 5px 20px;
+  padding: 10px 20px;
   border-radius: 10px 100px / 120px;
   display: flex;
   justify-content: center;

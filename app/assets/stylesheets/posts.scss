@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 // posts index
+
 .root_page{
   background-image: url("/images/background.PNG");
   background-size: cover;
@@ -175,4 +176,95 @@
   width: 200px;
   border-radius: 10px 100px / 120px;
   padding: 18px 100px;
+}
+
+//post_show
+
+.post_show_container{
+  background-color: #2a2a2a;
+  display: flex;
+  justify-content: center;
+}
+
+.post_show_items{
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  background-image: url("/images/background.PNG");
+  background-size: cover;
+  background-color: rgba(255,255,255,0.9);
+  background-blend-mode: lighten;
+  background-attachment: fixed;
+  border: 14px dashed #2a2a2a;
+  width: 80vw;
+  height: 1800px;
+  margin: 100px 0;
+}
+
+.post_show_title{
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gray;
+  border-radius: 10px 100px / 100px;
+  padding: 0 80px 30px 80px;
+}
+
+.post_show_title h1{
+  font-size: 40px;
+  background-color: #2a2a2a;
+  border-radius: 10px 100px / 100px;
+  color: white;
+  padding: 15px 80px;
+  margin-top: -50px;
+}
+
+.post_show_title em{
+  color: #2a2a2a;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.post_show_image{
+  height: 38vh;
+  width: 45vw;
+  min-height: 375px;
+  background-color: #f2f2f2;
+  object-fit: contain;
+  margin-top: 40px;
+}
+
+.post_show_text{
+  margin-top: 40px;
+  width: 60vw;
+  height: 70vh;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.post_like_or_comment{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.join_post_in_favorite{
+  margin-top: 80px;
+  background-color: #2a2a2a;
+  color: white;
+  font-size: 19px;
+  padding: 10px 40px;
+  border-radius: 50px;
+}
+
+.comment_to_post{
+  margin-top: 80px;
+  background-color: #2a2a2a;
+  color: white;
+  font-size: 19px;
+  padding: 10px 40px;
+  border-radius: 50px;
 }

@@ -1,8 +1,11 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: []
+  before_action :set_post, only: [:show]
 
   def index
     @posts = Post.order("created_at DESC")
+  end
+
+  def show
   end
 
   def new

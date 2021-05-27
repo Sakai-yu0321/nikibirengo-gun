@@ -1,0 +1,21 @@
+<div class="post_show_container">
+  <div class="post_show_items">
+
+    <div class="post_show_title">
+      <h1>title</h1>
+      <em><b>「<%= @post.title %>」</b></em>
+    </div>
+
+    <% if @post.image.attached? %>
+      <%= image_tag @post.image, class:"post_show_image"%>
+    <% end %> 
+
+    <div class="post_show_text">
+      <%= @post.text %>
+    </div>
+
+    <p class="join_post_in_favorite">この投稿をお気に入りに登録する</p>
+    <p class="comment_to_post">この投稿にコメントする</div>
+
+  </div>
+</div>

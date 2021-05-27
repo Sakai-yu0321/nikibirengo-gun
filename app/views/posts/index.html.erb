@@ -36,7 +36,7 @@
     <% @posts.each do |post| %>
       <div class="post_container">
         <%= link_to(root_path) do %>
-            <img src="<%= "/images/nikibikun.jpg" %>" class="nikibikun_image">
+            <img src="<%= "/images/nikibikun.jpg" %>" class="post_image">
         <% end %>
         <div class="user_nickname">
           <%= post.user.nickname %>の投稿

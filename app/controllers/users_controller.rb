@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   before_action :authenticate_user!, only: [:show]
 
   def show
+    @posts = Post.where(user_id: params[:id])
   end
 
   private

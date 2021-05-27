@@ -3,6 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 // posts index
+.root_page{
+  background-image: url("/images/background.PNG");
+  background-size: cover;
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+  background-attachment: fixed;
+}
 
 .top_image{
   display: flex;
@@ -45,112 +52,127 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 200px;
+  margin-left: 150px;
+  margin-top: 60px;
 }
 
 .post_container{
-  margin-right: 100px;
+  margin-right: 5px;
   width: 300px;
-  height: 300px;
+  height: 280px;
 }
 
 .nikibikun_image{
-  width: 200px;
+  width: 150px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0px 2px 5px rgba(0,0,0,.25);
 }
 
-.post_title{
+.user_nickname{
   white-space:nowrap;
   overflow: scroll;
-  border-bottom: 1px solid #f2f2f2;
-}
-
-.post_text{
-  white-space:nowrap;
-  overflow: scroll;
-  margin-top: 10px;
+  color: black;
+  width: 150px;
+  padding: 3px 0;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: -43px;
+  position: relative;
+  z-index: 20;
 }
 
 // posts new
 
-.new_posts_form{
-  // background-color: yellowgreen;
-  background-image: url("/images/background.PNG");
-  background-size: cover;
-  background-color:rgba(255,255,255,0.8);
-  background-blend-mode:lighten;
-  height:100%;
-  min-width:100%;
+.new_post_page{
+  text-align: center;
+  margin-bottom: 200px;
 }
 
-.new_posts_form_contents{
+.new_posts_form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 2px 5px rgba(0,0,0,.25);
+  border-radius: 10px 100px / 120px;
+  margin: 50px 450px 120px;
+}
+
+.new_posts_form h1{
+  background-color: #2a2a2a;
+  border-radius: 10px 100px / 120px;
+  padding: 26px 83px;
+  width: 380px;
+  color: gray;
+}
+
+.new_post_error_messages{
+  border: 1px solid red;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.new_post_error_messages p{
+  color: red;
+}
+
+.new_post_items{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
+  margin: 20px 30px;
 }
 
-.new_posts_form_contents h1{
-  background-color: #2a2a2a;
-  border-radius: 10px 100px / 120px;
-  padding: 20px 80px;
-  color: white;
-  margin-top: 80px;
-}
-
-.posts_title{
-  background-color: #2a2a2a;
-  border-radius: 10px 100px / 120px;
-  padding: 17px 80px;
-  color: white;
-  margin-top: 40px;
+.new_post_item_title{
+  color: gray;
+  margin-top: 20px;
 }
 
 .indispensable{
-  font-weight: lighter;
   font-size: 13px;
-  margin-left: 10px;
+  margin-left: 2px;
 }
 
-.posts_image{
-  border: none;
-  width: 240px;
-  border: none;
-  box-shadow: 0px 2px 5px rgba(0,0,0,.25);
-  margin-top: 15px;
+.new_post_image{
+  border: 1px solid gray;
+  margin: 7px 120px 0px;
 }
 
-.category_select{
-  border: none;
-  width: 400px;
-  border: none;
-  box-shadow: 0px 2px 5px rgba(0,0,0,.25);
-  margin-top: 15px;
+.new_post_category_select{
+  border: 1px solid gray;
+  margin: 7px 60px 0px;
+  height: 25px;
 }
 
-.posts_title_input_form{
-  width: 800px;
-  border: none;
-  box-shadow: 0px 2px 5px rgba(0,0,0,.25);
-  margin-top: 15px;
-  
+.new_post_title_input_form{
+  border: 1px solid gray;
+  margin-top: 7px;
 }
 
-.posts_text_input_form{
-  width: 800px;
-  height: 350px;
-  border: none;
-  box-shadow: 0px 2px 5px rgba(0,0,0,.25);
-  margin-top: 15px;
+.new_post_text_input_form{
+  border: 1px solid gray;
+  margin-top: 7px;
+  height: 200px;
+  overflow: scroll;
 }
 
-.posts_btn{
+.new_post_submit_btn{
   border: none;
-  font-size: 20px;
-  color: white;
   background-color: #1fb5bf;
-  padding: 12px 80px;
+  color: white;
+  padding: 7px 0;
+  margin: 40px 160px 20px;
   border-radius: 10px 100px / 120px;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  margin-top: 100px;
+}
+
+.new_post_to_root_path{
+  text-decoration: none;
+  background-color: #1fb5bf;
+  color: white;
+  width: 200px;
+  border-radius: 10px 100px / 120px;
+  padding: 18px 100px;
 }

@@ -1,3 +1,4 @@
+<div class="root_page">
   <div class="top_image">
     <img src="<%= "/images/title.jpg" %>">
   </div>
@@ -35,18 +36,12 @@
     <% @posts.each do |post| %>
       <div class="post_container">
         <%= link_to(root_path) do %>
-          <%# <% if post.image != nil %> 
             <img src="<%= "/images/nikibikun.jpg" %>" class="nikibikun_image">
-          <%# <% else %>
-            <%# <%= image_tag post.image, class: 'nikibikun_image' if post.image.attached? %> 
-          <%# <% end %> 
         <% end %>
-        <div class="post_title">
-          <b><%= post.title %></b>
-        </div>
-        <div class="post_text">
-          <%= post.text %>
+        <div class="user_nickname">
+          <%= post.user.nickname %>の投稿
         </div>
       </div>
     <% end %>
   </div>
+</div>  

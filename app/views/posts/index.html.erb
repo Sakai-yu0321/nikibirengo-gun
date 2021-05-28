@@ -35,7 +35,7 @@
   <div class="post_index">
     <% @posts.each do |post| %>
       <div class="post_container">
-        <%= link_to(root_path) do %>
+        <%= link_to post_path(post.id) do %>
             <img src="<%= "/images/nikibikun.jpg" %>" class="post_image">
         <% end %>
         <div class="user_nickname">

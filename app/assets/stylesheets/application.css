@@ -14,7 +14,7 @@
  *= require_self
  */
 
- *{
+  *{
   margin:0;
   padding:0;
   }
@@ -25,4 +25,12 @@
 
   .field_with_errors{
     display: contents;
+  }
+
+  .move_root_path{
+    text-decoration: none;
+    color: white;
+    background-color: #1fb5bf;
+    padding: 18px 40px;
+    border-radius: 10px 100px / 100px;
   }

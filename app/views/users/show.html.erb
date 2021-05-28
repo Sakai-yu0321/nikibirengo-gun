@@ -1,27 +1,37 @@
 <div class="user_my_page">
-  <div class="user_my_page_title">
-    <h1><%= @user.nickname %>のユーザーページ</h1>
-  </div>
-  <div class="user_my_page_main">
-    <div class="user_posts">
-      <h3><%= @user.nickname%> さんの投稿一覧</h3>
+
+  <div class="user_my_page_container">
+
+    <div class="user_my_page_title">
+      <h1><%= @user.nickname %>のユーザーページ</h1>
     </div>
-    <div class="user_post">
-      <% @posts.each do |post| %>
-        <div class="user_post_title">
-          <div class="user_post_category_and_title">
+
+    <div class="user_my_page_main">
+      <div class="user_posts_index">
+        <h3><%= @user.nickname%> さんの投稿一覧</h3>
+      </div>
+
+      <div class="user_post">
+        <% @posts.each do |post| %>
+          <%= link_to post_path(post.id), class:"user_post_category_and_title" do %>
             <p><em>カテゴリ</em>：<%= post.category.name %></p>
             <p><em>タイトル</em>：<%= post.title %></p>
-          </div>
-        </div>
-      <% end %>
+          <% end %>
+        <% end %>
+      </div>
+
+      <div class="liked_posts">
+        <h3><%= @user.nickname %> さんがいいねした投稿</h3>
+      </div>
+
+      <div class="user_like">
+      <div>
+
     </div>
-    <div class="liked_posts">
-      <h3><%= @user.nickname %> さんがいいねした投稿</h3>
-    </div>
-    <div class="user_like">
-    <div>
   </div>
+
+  <div class="my_page_to_root_path">
+    <%= render "shared/move_root_path" %>
+  </div>
+  <%# <%= link_to 'アカウントを削除',  user_registration_path(current_user.id), method: :delete, class: "move_to_user_destroy" %> 
 </div>
-<%= link_to 'トップページに戻る', root_path, class: "move_to_root_path" %>
-<%# <%= link_to 'アカウントを削除',  user_registration_path(current_user.id), method: :delete, class: "move_to_user_destroy" %> 

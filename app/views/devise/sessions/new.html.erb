@@ -1,33 +1,40 @@
-<div class="sign_up_form">
+<div class="sign_up_page">
 
-  <div class="sign_up_title">
-    <h2>Login to your account</h2>
-  </div>
+  <div class="sign_up_form">
 
-  <%= form_with model: @user, url: user_session_path, class: 'account_create', local: true do |f| %>
-    <div class="field">
-      <%= f.label :email, "email", class: "form_label" %><br />
-      <%= f.email_field :email, class:"input_default", autofocus: true, autocomplete: "email" %>
+    <div class="sign_up_title">
+      <h2>Login to your account</h2>
     </div>
-  
-    <div class="field">
-      <%= f.label :password, "password", class: "form_label" %><br />
-      <%= f.password_field :password, class:"input_default", autocomplete: "current-password" %>
-    </div>
-  
-    <% if devise_mapping.rememberable? %>
+
+    <%= form_with model: @user, url: user_session_path, class: 'account_create', local: true do |f| %>
       <div class="field">
-        <%= f.check_box :remember_me, class: "remember_me_check_box" %>
-        <%= f.label :remember_me, class: "remember_me" %>
+        <%= f.label :email, "email", class: "form_label" %><br />
+        <%= f.email_field :email, class:"input_default", autofocus: true, autocomplete: "email" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password, "password", class: "form_label" %><br />
+        <%= f.password_field :password, class:"input_default", autocomplete: "current-password" %>
+      </div>
+
+      <% if devise_mapping.rememberable? %>
+        <div class="field">
+          <%= f.check_box :remember_me, class: "remember_me_check_box" %>
+          <%= f.label :remember_me, class: "remember_me" %>
+        </div>
+      <% end %>
+
+      <div class="actions">
+        <%= f.submit "Log in", class: "sign_up_submit" %>
       </div>
     <% end %>
-  
-    <div class="actions">
-      <%= f.submit "Log in", class: "sign_up_submit" %>
-    </div>
-  <% end %>
 
-  <div class="moving_to_form">
-    <%= render "devise/shared/links" %>
+    <div class="moving_to_form">
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
+
+  <div class="sign_up_to_root_path">
+    <%= render "shared/move_root_path" %>
   </div>
 </div>

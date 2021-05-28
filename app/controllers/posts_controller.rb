@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :set_post, only: [:show, :edit, :update]
+  before_action :user_access_limit, only: [:edit, :update, :destroy]
 
   def index
     @posts = Post.order("created_at DESC")
@@ -14,11 +16,11 @@ class PostsController < ApplicationController
 
   # def next
   # end
-
+  
   def new
     @post = Post.new
   end
-
+  
   def create
     @post = Post.new(post_params)
     if @post.save
@@ -29,6 +31,19 @@ class PostsController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    @post.update(post_params)
+    if @post.save
+      redirect_to post_path
+      flash[:notice] = "編集が完了しました"
+    else
+      render :edit
+    end
+  end
+  
   private
 
   def set_post
@@ -37,5 +52,11 @@ class PostsController < ApplicationController
 
   def post_params
     params.require(:post).permit(:category_id, :title, :text, :image).merge(user_id: current_user.id)
+  end
+
+  def user_access_limit
+    if @post.user_id != current_user.id
+      redirect_to root_path
+    end
   end
 end

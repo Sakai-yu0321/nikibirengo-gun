@@ -1,0 +1,42 @@
+<div class="new_post_page">
+  <%= form_with model: @post, class:"new_posts_form", local: true do |f| %>
+
+    <h1>Edit your post</h1>
+
+    <% if @post.errors.any? %>
+    <div class="new_post_error_messages">
+      <p>エラーが発生しました</p>
+      <%= render 'shared/error_messages', model: f.object %>
+    </div>
+    <% end %>
+
+    <div class="new_post_items">
+
+      <p class="new_post_item_title">画像を選択して下さい
+      <span class="indispensable">任意</span></p>
+      <%= f.file_field :image, class:"new_post_image" %>
+
+      <p class="new_post_item_title">カテゴリを選択してください
+      <span class="indispensable">必須</span></p>
+      <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"new_post_category_select"}) %>
+
+      <p class="new_post_item_title">タイトルを編集してください
+      <span class="indispensable">必須</span></p>
+      <%= f.text_area :title, class:"new_post_title_input_form", placeholder:"タイトル （40字まで）", maxlength:"40" %>
+
+      <p class="new_post_item_title">投稿内容を編集してください
+      <span class="indispensable">必須</span></p>
+      <%= f.text_area :text, class:"new_post_text_input_form", placeholder:"投稿内容 （2000字まで）", maxlength:"2000" %>
+
+      <%= f.submit "編集する" ,class:"new_post_submit_btn" %>
+
+    </div>
+  <% end %>
+
+  <div class="edit_post_to_root_path">
+  <%= link_to "戻る", post_path, class:"move_post_show"%>
+  </div>
+
+  <%= render "shared/move_root_path" %>
+  
+</div>

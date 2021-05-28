@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
-  before_action :set_post, only: [:show, :edit, :update]
+  before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :user_access_limit, only: [:edit, :update, :destroy]
 
   def index
@@ -42,6 +42,12 @@ class PostsController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def destroy
+    @post.destroy
+    redirect_to root_path
+    flash[:notice] = "投稿を削除しました"
   end
   
   private

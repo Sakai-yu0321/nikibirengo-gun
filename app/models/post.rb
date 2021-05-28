@@ -5,7 +5,7 @@ class Post < ApplicationRecord
   has_one_attached :image
 
   validates :category_id, numericality: { other_than: 1 }
-  validates :title, :text, :user_id, presence: true
+  validates :title, :text, presence: true
 
   # def previous
   #   Post.order('created_at desc, id desc').where('created_at <= ? and id < ?', created_at, id).first

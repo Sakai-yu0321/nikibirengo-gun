@@ -3,7 +3,7 @@
 
     <div class="post_show_title">
       <h1>title</h1>
-      <em><b>「<%= @post.title %>」</b></em>
+      <em><b><%= @post.title %></b></em>
     </div>
 
     <% if @post.image.attached? %>
@@ -13,7 +13,7 @@
     <% if user_signed_in? && @post.user_id == current_user.id %>
       <div class="post_edit">
         <i class="fa fa-edit"></i>
-        <%= link_to "投稿を編集する", root_path, class: "post_edit_btn" %>
+        <%= link_to "投稿を編集する", edit_post_path(@post.id), class: "post_edit_btn" %>
       </div>
     <% end %>
 
@@ -40,13 +40,13 @@
     <div class="comment_input_form">
       ここでコメントを入力する
     </div>
-    
-    <div class="post_show_to_root_path">
-      <%= render "shared/move_root_path"%>
-    </div>
 
     <% if user_signed_in? && @post.user_id == current_user.id %>
       <%= link_to "マイページ", user_path(current_user.id), class:"post_show_to_my_page" %>
     <% end %>
+    
+    <div class="post_show_to_root_path">
+      <%= render "shared/move_root_path"%>
+    </div>
   </div>
 </div>

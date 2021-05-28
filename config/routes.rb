@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   resources :users, only: [:show]
   root to: 'posts#index'
   resources :posts, except: [:index]
+  # get "posts/:id/previous" => "posts#previous"
+  # get "posts/:id/next" => "posts#next"
 end

@@ -8,6 +8,13 @@ class PostsController < ApplicationController
   def show
   end
 
+  # def previous
+  #   redirect_to "posts/#{params[:id]}/show"
+  # end
+
+  # def next
+  # end
+
   def new
     @post = Post.new
   end

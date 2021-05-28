@@ -33,10 +33,14 @@
     </div>
   <% end %>
 
-  <div class="edit_post_to_root_path">
-  <%= link_to "戻る", post_path, class:"move_post_show"%>
-  </div>
-
-  <%= render "shared/move_root_path" %>
+  <div class="edit_post_btn_items">
+    <%= link_to(post_path, class:"move_post_show_btn") do %>
+      <i class="fa fa-rotate-left"></i>戻る
+    <% end %>
+    <%= link_to(post_path, method:"delete", class:"destroy_post_btn") do %>
+      <i class="fa fa-trash-o"></i>投稿を削除する
+    <% end %>
+    <%= render "shared/move_root_path" %>
+  <div>
   
 </div>

@@ -46,7 +46,7 @@
           </div>
 
           <% if user_signed_in? && comment.user_id == current_user.id %>
-            <%= link_to post_comment_path(comment.post.id, comment.id), method: :delete, class:"comment_delete" do %>
+            <%= link_to post_comment_path(comment.post.id, comment.id), method: :delete, data: { confirm: '本当に削除しますか？' }, class:"comment_delete" do %>
              <i class="fa fa-trash"></i>
             <% end %>
           <% end %>
@@ -59,15 +59,17 @@
       <%= f.button :type => "submit", style: 'border-style: none;' do %>
         <i class="fa fa-send"></i>
       <% end %>
-      <% if @post.likes == nil %>
-        <%= link_to post_likes_path(@post.id) do %>
-          <i class="fa fa-heart-o"></i>
+      <div class="heart_btn">
+        <% if @post.likes == nil %>
+          <%= link_to post_likes_path(@post.id) do %>
+            <i class="fa fa-heart"></i>
+          <% end %>
+        <% else %> 
+          <%# <%= link_to post_like_path , method: :delete do %>
+            <i class="fa fa-heart-o"></i>
+          <%# <% end %>
         <% end %>
-      <% else %> 
-        <%# <%= link_to post_like_path(@like.post.id, @like.id), method: :delete do %> %>
-          <%# <i class="fa fa-heart"></i> %>
-        <%# <% end %> %>
-      <% end %>
+      </div>
     <% end %>
 
     <div class="move_other_container">

@@ -11,7 +11,7 @@
       <%= link_to '新規投稿', new_post_path, class: "link" %>
     </li>
     <li>
-      <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "link" %>
+      <%= link_to 'ログアウト', destroy_user_session_path, data: { confirm: 'ログアウトしますか？' }, method: :delete, class: "link" %>
     </li>
     <li>
       <%= link_to 'マイページ', user_path(current_user.id), class: "link" %>
@@ -25,12 +25,6 @@
     </li>
     <% end %>
   </ul>
-
-  <% if flash[:notice] %>
-    <div class="flash_message">
-      <%= flash[:notice] %>
-    </div>
-  <% end %>
 
   <div class="post_index">
     <% @posts.each do |post| %>

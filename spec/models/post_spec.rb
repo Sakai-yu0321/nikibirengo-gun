@@ -7,7 +7,7 @@ RSpec.describe Post, type: :model do
 
   describe '新規投稿' do
     context '投稿できる時' do
-      it 'title,text,category_id,user_idが存在すれば登録できる' do
+      it 'title,text,category_idが存在すれば登録できる' do
         expect(@post).to be_valid
       end
     end

@@ -10,6 +10,7 @@ class PostsController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @post.comments.includes(:user)
+    @like = @post.likes
   end
 
   # def previous

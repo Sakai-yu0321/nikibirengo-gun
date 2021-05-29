@@ -51,7 +51,6 @@
             <% end %>
           <% end %>
         </div>
-
       <% end %>
     </div>
         
@@ -59,6 +58,15 @@
       <%= f.text_area :text, class:"comment_text" %>
       <%= f.button :type => "submit", style: 'border-style: none;' do %>
         <i class="fa fa-send"></i>
+      <% end %>
+      <% if @post.likes == nil %>
+        <%= link_to post_likes_path(@post.id) do %>
+          <i class="fa fa-heart-o"></i>
+        <% end %>
+      <% else %> 
+        <%# <%= link_to post_like_path(@like.post.id, @like.id), method: :delete do %> %>
+          <%# <i class="fa fa-heart"></i> %>
+        <%# <% end %> %>
       <% end %>
     <% end %>
 

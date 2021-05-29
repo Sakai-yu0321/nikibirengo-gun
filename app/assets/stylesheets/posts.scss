@@ -291,11 +291,11 @@
 
 .move_other_container{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .post_show_to_root_path{
-  margin-top: 115px;
+  margin-top: 40px;
 }
 
 .post_show_to_my_page{

@@ -30,17 +30,37 @@
 
     <p class="comment_to_post"><i class="fa fa-comments"></i>comments</p>
 
-    <div class="comments_container">
-      <div class="comment_items">
-        <div class="comments_index">
-          <%#  ここにコメントを一覧表示 %>
-        </div>
-      </div>
-    </div>
+    <div class="comments_index">
+      <% @comments.each do |comment| %>
 
-    <div class="comment_input_form">
-      ここでコメントを入力する
+        <div class="one_comment">
+          <div class="comment_user_name">
+            <%= comment.user.nickname %>
+          </div>
+
+          <div class="one_comment_text">
+            <%= comment.text %>
+            <div class="comment_created_at">
+              <%= comment.created_at %>
+            </div>
+          </div>
+
+          <% if user_signed_in? && comment.user_id == current_user.id %>
+            <%= link_to post_comment_path(comment.post.id, comment.id), method: :delete, class:"comment_delete" do %>
+             <i class="fa fa-trash"></i>
+            <% end %>
+          <% end %>
+        </div>
+
+      <% end %>
     </div>
+        
+    <%= form_with model: [@post, @comment], url: post_comments_path(@post.id), method: :post, class:"comment_input_form", local: true do |f| %>
+      <%= f.text_area :text, class:"comment_text" %>
+      <%= f.button :type => "submit", style: 'border-style: none;' do %>
+        <i class="fa fa-send"></i>
+      <% end %>
+    <% end %>
 
     <div class="move_other_container">
       <% if user_signed_in? && @post.user_id == current_user.id %>
@@ -51,7 +71,7 @@
     
       <div class="post_show_to_root_path">
         <%= render "shared/move_root_path"%>
-      </div>  
+      </div>
     </div>
   </div>
 </div>

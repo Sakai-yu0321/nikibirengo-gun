@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :users, only: [:show]
   root to: 'posts#index'
   resources :posts, except: [:index] do
-    resources :comments
+    resources :comments, only: [:create, :destroy]
   end
   # get "posts/:id/previous" => "posts#previous"
   # get "posts/:id/next" => "posts#next"

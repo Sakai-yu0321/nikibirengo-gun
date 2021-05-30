@@ -25,6 +25,11 @@
       </div>
 
       <div class="user_like">
+        <% @likes.each do |like| %>
+          <%= link_to post_path(like.post.id), class:"liked_post" do %>
+           <%= like.post.title %>
+          <% end %>
+        <% end %>
       <div>
 
     </div>

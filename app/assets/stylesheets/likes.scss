@@ -3,8 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .heart_btn{
-  display: flex;
-  align-items: center;
-  margin-left:10px;
-  font-size: 22px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.fa-heart-o{
+  color: red;
+}
+
+.fa-heart{
+  color: red;
 }

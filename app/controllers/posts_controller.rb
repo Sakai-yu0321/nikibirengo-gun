@@ -10,7 +10,9 @@ class PostsController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @post.comments.includes(:user)
-    @like = @post.likes.includes(:user)
+    if user_signed_in?
+      @like = Like.find_by(post_id: params[:id], user_id: current_user.id)
+    end
   end
 
   # def previous

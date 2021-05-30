@@ -3,7 +3,8 @@ class UsersController < ApplicationController
   before_action :authenticate_user!, only: [:show]
 
   def show
-    @posts = Post.where(user_id: params[:id])
+    @posts = Post.where(user_id: current_user.id)
+    @likes = Like.where(user_id: current_user.id)
   end
 
   private

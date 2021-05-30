@@ -3,14 +3,27 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .heart_btn{
-  font-size: 20px;
   margin-right: 10px;
 }
 
 .fa-heart-o{
+  margin-left: 3px;
+}
+
+.no_like{
+  text-decoration: none;
   color: red;
 }
 
 .fa-heart{
+  margin-left: 3px;
+}
+
+.has_like{
+  text-decoration: none;
   color: red;
+}
+
+.has_like{
+  text-decoration: none;
 }

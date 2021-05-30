@@ -12,15 +12,9 @@ class PostsController < ApplicationController
     @comments = @post.comments.includes(:user)
     if user_signed_in?
       @like = Like.find_by(post_id: params[:id], user_id: current_user.id)
+      @likes_count = Like.where(post_id: @post.id).count
     end
   end
-
-  # def previous
-  #   redirect_to "posts/#{params[:id]}/show"
-  # end
-
-  # def next
-  # end
   
   def new
     @post = Post.new

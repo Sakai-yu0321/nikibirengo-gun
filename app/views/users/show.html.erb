@@ -27,7 +27,8 @@
       <div class="user_like">
         <% @likes.each do |like| %>
           <%= link_to post_path(like.post.id), class:"liked_post" do %>
-           <%= like.post.title %>
+            <p><em>カテゴリ</em>：<%= like.post.category.name %></p>
+            <p><em>タイトル</em>：<%= like.post.title %></p>
           <% end %>
         <% end %>
       <div>

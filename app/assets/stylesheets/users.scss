@@ -65,8 +65,15 @@
 }
 
 .liked_post{
-  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 3px dotted lightgray;
+  color: black;
   padding: 20px;
+}
+
+.liked_post p{
+  color: #2a2a2a;
 }
 
 .my_page_to_root_path{

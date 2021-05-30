@@ -10,6 +10,9 @@ class PostsController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @post.comments.includes(:user)
+    if user_signed_in?
+      @like = Like.find_by(post_id: params[:id], user_id: current_user.id)
+    end
   end
 
   # def previous
@@ -26,8 +29,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
-      redirect_to root_path
-      flash[:notice] = "投稿が完了しました"
+      redirect_to root_path, notice: "投稿が完了しました"
     else
       render :new
     end
@@ -39,8 +41,7 @@ class PostsController < ApplicationController
   def update
     @post.update(post_params)
     if @post.save
-      redirect_to post_path
-      flash[:notice] = "編集が完了しました"
+      redirect_to post_path, notice: "編集が完了しました"
     else
       render :edit
     end
@@ -48,8 +49,7 @@ class PostsController < ApplicationController
 
   def destroy
     @post.destroy
-    redirect_to root_path
-    flash[:notice] = "投稿を削除しました"
+    redirect_to root_path, notice: "投稿を削除しました"
   end
   
   private

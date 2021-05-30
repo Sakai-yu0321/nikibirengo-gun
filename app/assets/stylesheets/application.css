@@ -19,6 +19,28 @@
   padding:0;
   }
 
+  .flash_notice{
+    position: fixed;
+    top: 0;
+    z-index: 30;
+    width: 100vw;
+    background-color: #1fb5bf;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .flash_alert{
+    position: fixed;
+    top: 0;
+    z-index: 30;
+    width: 100vw;
+    background-color: #800000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+
   .error-alert ul{
     list-style: none;
   }

@@ -63,7 +63,7 @@
 .user_nickname{
   white-space:nowrap;
   overflow: scroll;
-  color: black;
+  color: gray;
   width: 150px;
   padding: 3px 0;
   text-align: center;
@@ -188,10 +188,11 @@
 }
 
 .prev_or_next{
-  width: 26vw;
+  width: 16vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
   margin-top: 40px;
 }
 
@@ -200,7 +201,8 @@
   color: #2a2a2a;
   display: flex;
   align-items: center;
-  margin-right: 5px;
+  width: 45%;
+  margin: 0 auto;
 }
 
 .next_post{
@@ -208,7 +210,8 @@
   color: #2a2a2a;
   display: flex;
   align-items: center;
-  margin-left: 5px;
+  width: 45%;
+  margin: 0 auto;
 }
 
 .fa-arrow-circle-o-left{

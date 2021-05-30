@@ -8,6 +8,15 @@ require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
 
+require('jquery')
+
+$(function(){
+  setTimeout("$('.flash_notice').fadeOut('slow')", 3000);
+});
+
+$(function(){
+  setTimeout("$('.flash_alert').fadeOut('slow')", 3000);
+});
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)

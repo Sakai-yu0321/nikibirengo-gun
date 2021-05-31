@@ -46,7 +46,7 @@
       </div>
 
       <div class="post_created_at">
-        <%= @post.created_at %>
+        <%= l @post.created_at %>
         <% if user_signed_in? && @post.user_id == current_user.id %>
           <%= link_to(edit_post_path(@post.id), class:"post_edit_btn") do %>
             <i class="fa fa-edit"></i>Edit
@@ -88,9 +88,9 @@
       <% end %>
     </div>
         
-    <%= form_with model: [@post, @comment], url: post_comments_path(@post.id), method: :post, class:"comment_input_form", local: true do |f| %>
+    <%= form_with model: [@post, @comment], url: post_comments_path(@post.id), method: :post, class:"comment_input_form", id:"new_comment", local: true do |f| %>
       <%= f.text_area :text, class:"comment_text" %>
-      <%= f.button :type => "submit", style: 'border-style: none;' do %>
+      <%= f.button :type => "submit", style: 'border-style: none;', class:"form_submit" do %>
         <i class="fa fa-send"></i>
       <% end %>
     <% end %>

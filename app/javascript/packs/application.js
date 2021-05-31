@@ -9,13 +9,8 @@ require("@rails/activestorage").start()
 require("channels")
 
 require('jquery')
-
-$(function(){
-  setTimeout("$('#flash_notice').slideDown('slow')", 100);
-  setTimeout("$('#flash_notice').slideUp('slow')", 2500);
-  setTimeout("$('#flash_alert').slideDown('slow')", 100);
-  setTimeout("$('#flash_alert').slideUp('slow')", 2500);
-});
+require("../flash")
+require("../comment")
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)

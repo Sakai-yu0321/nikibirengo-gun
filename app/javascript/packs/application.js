@@ -11,11 +11,10 @@ require("channels")
 require('jquery')
 
 $(function(){
-  setTimeout("$('.flash_notice').fadeOut('slow')", 3000);
-});
-
-$(function(){
-  setTimeout("$('.flash_alert').fadeOut('slow')", 3000);
+  setTimeout("$('#flash_notice').slideDown('slow')", 100);
+  setTimeout("$('#flash_notice').slideUp('slow')", 2500);
+  setTimeout("$('#flash_alert').slideDown('slow')", 100);
+  setTimeout("$('#flash_alert').slideUp('slow')", 2500);
 });
 
 // Uncomment to copy all static images under ../images to the output folder and reference

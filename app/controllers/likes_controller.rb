@@ -3,7 +3,7 @@ class LikesController < ApplicationController
 
   def create
     Like.create(user_id: current_user.id, post_id: params[:post_id])
-    redirect_to post_path(params[:post_id]), notice:"投稿に「いいね」をしました"
+    redirect_to post_path(params[:post_id]), notice:"いいねをしました"
   end
 
   def destroy

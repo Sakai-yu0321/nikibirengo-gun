@@ -7,7 +7,7 @@ RSpec.describe Post, type: :model do
 
   describe '新規投稿' do
     context '投稿できる時' do
-      it 'title,text,category_idが存在すれば登録できる' do
+      it 'title,text,category_idが正しく入力されている場合登録できる' do
         expect(@post).to be_valid
       end
     end
@@ -31,6 +31,11 @@ RSpec.describe Post, type: :model do
         @post.user = nil
         @post.valid?
         expect(@post.errors.full_messages).to include "User must exist"
+      end
+      it 'titleが40字より多い場合登録できない' do
+        @post.title =  Faker::Name.initials(number: 41)
+        @post.valid?
+        expect(@post.errors.full_messages).to include "Title is too long (maximum is 40 characters)"
       end
     end
   end

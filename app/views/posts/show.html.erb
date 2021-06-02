@@ -21,14 +21,12 @@
 
     <div class="post_content">
       <div class="post_title">
-        title: <% @post.title %>
-
+        title: <%= @post.title %>
         <% if user_signed_in? %>
           <div class="heart_btn">
             <%= render partial: 'like_btn'%>
           </div>
         <% end %>
-
       </div>
 
       <div class="post_category">

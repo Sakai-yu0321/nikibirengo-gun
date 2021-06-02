@@ -1,0 +1,7 @@
+ja:
+  activerecord:
+    attributes:
+      post:
+        title: タイトル
+        text: テキスト
+        category_id: カテゴリ

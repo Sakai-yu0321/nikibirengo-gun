@@ -7,6 +7,4 @@ Rails.application.routes.draw do
     resources :comments, only: [:create, :destroy]
     resources :likes, only: [:create, :destroy]
   end
-  # get "posts/:id/previous" => "posts#previous"
-  # get "posts/:id/next" => "posts#next"
 end

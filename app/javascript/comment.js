@@ -35,7 +35,7 @@ $(document).on('turbolinks:load', function() {
       $('.form_submit').prop('disabled', false);
     })
     .fail(function(){
-      alert('コメントを入力してください');
+      alert('エラーが発生しました');
     })
   })
 })

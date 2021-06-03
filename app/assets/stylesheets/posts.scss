@@ -42,14 +42,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 150px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .post_container{
   margin-right: 5px;
   width: 300px;
   height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .post_image{
@@ -76,8 +79,9 @@
 // posts new
 
 .new_post_page{
-  text-align: center;
   margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .new_posts_form{
@@ -87,14 +91,18 @@
   flex-direction: column;
   box-shadow: 0px 2px 5px rgba(0,0,0,.25);
   border-radius: 10px 100px / 120px;
-  margin: 50px 450px 120px;
+  width: 570px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 100px;
 }
 
 .new_posts_form h1{
   background-color: #2a2a2a;
   border-radius: 10px 100px / 120px;
   padding: 26px 83px;
-  width: 380px;
+  width: 574px;
+  text-align: center;
   color: gray;
 }
 
@@ -129,6 +137,7 @@
 .new_post_image{
   border: 1px solid gray;
   margin: 7px 120px 0px;
+  color: gray;
 }
 
 .new_post_category_select{
@@ -154,7 +163,10 @@
   background-color: #1fb5bf;
   color: white;
   padding: 7px 0;
-  margin: 40px 160px 20px;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
   border-radius: 10px 100px / 120px;
 }
 
@@ -247,13 +259,12 @@
 .post_title{
   border-bottom: 1px solid gray;
   padding-bottom: 5px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .post_category{
   margin-top: 20px;
   border-bottom: 1px dashed gray;
+  display: flex;
 }
 
 .post_text{
@@ -262,9 +273,14 @@
 
 .post_created_at{
   display: flex;
-  justify-content: space-between;
   color: gray;
   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.like_and_edit{
+  display: flex;
 }
 
 .post_edit_btn{

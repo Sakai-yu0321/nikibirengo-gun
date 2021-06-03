@@ -26,13 +26,13 @@
 
       <p class="new_post_item_title">投稿内容を入力してください
       <span class="indispensable">必須</span></p>
-      <%= f.text_area :text, class:"new_post_text_input_form", placeholder:"投稿内容 （2000字まで）", maxlength:"2000" %>
+      <%= f.text_area :text, class:"new_post_text_input_form", placeholder:"投稿内容", maxlength:"2000" %>
 
       <%= f.submit "投稿する" ,class:"new_post_submit_btn" %>
 
     </div>
   <% end %>
-
+  
   <%= render "shared/move_root_path" %>
   
 </div>

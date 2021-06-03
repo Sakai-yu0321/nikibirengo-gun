@@ -92,13 +92,34 @@
       left: calc(10vw) ;
     }
     /* sign_up */
+    .sign_up_title{
+      padding: 40px 0;
+      font-size: 20px;
+    }
     .sign_up_form{
-      margin-top: 100px;
+      width: 70%;
+      height: 740px;
+      margin-top: 300px;
+      font-size: 23px;
+    }
+    .field{
+      margin-top: 35px;
+    }
+    .input_default{
+      font-size: 25px;
+      height: 30px;
+      width: 50%;
     }
     .sign_up_to_root_path{
       margin-top: 70px !important;
     }
-  
+    .sign_up_submit{
+      font-size: 22px;
+    }
+    .form_links{
+      font-size: 21px;
+    }
+
     /* post_index */
     .top_image img{
       width: 60%;
@@ -175,6 +196,19 @@
     /* post_new */
     .new_posts_form{
       width: 80%;
+      margin-top: 220px;
+    }
+    .new_post_image{
+      font-size: 17px;
+    }
+    .new_post_category_select{
+      font-size: 20px;
+    }
+    .new_post_title_input_form{
+      font-size: 20px;
+    }
+    .new_post_text_input_form{
+      font-size: 20px;
     }
     .new_posts_form h1{
       width: 100.5%;
@@ -186,5 +220,15 @@
     }
     .new_post_submit_btn{
       width: 150px;
+    }
+    /* post_edit */
+    .move_post_show_btn{
+      width: 200px;
+      text-align: center;
+      padding: 17px 50px;
+    }
+    .destroy_post_btn{
+      width: 235px;
+      text-align: center;
     }
   }

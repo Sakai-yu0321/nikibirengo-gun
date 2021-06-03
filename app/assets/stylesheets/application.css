@@ -56,7 +56,7 @@
   }
 
   .root_path_btn{
-    width: 200px;
+    width: 250px;
     background-color: #2a2a2a;
     padding: 18px 40px;
     border-radius: 10px 100px / 100px;
@@ -67,4 +67,301 @@
 
   .fa-desktop{
     margin-right: 8px;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    #flash_notice{
+      left: calc(10vw) ;
+    }
+    /* sign_up */
+    .sign_up_title{
+      padding: 40px 0;
+      font-size: 20px;
+    }
+    .sign_up_form{
+      width: 70%;
+      height: 740px;
+      margin-top: 300px;
+      font-size: 23px;
+    }
+    .field{
+      margin-top: 35px;
+    }
+    .input_default{
+      font-size: 25px;
+      height: 30px;
+      width: 50%;
+    }
+    .sign_up_to_root_path{
+      margin-top: 70px !important;
+    }
+    .sign_up_submit{
+      font-size: 22px;
+    }
+    .form_links{
+      font-size: 21px;
+    }
+
+    /* post_index */
+    .top_image img{
+      width: 60%;
+    }
+    .top_menu{
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 55px;
+      padding: 40px 70px;
+      justify-content: space-around;
+    }
+    .post_container{
+      width: 100%;
+      height: 280px;
+    }
+    .post_image{
+      width: 230px;
+    }
+
+    /* post_show */
+    .post_show_container{
+      background-color: white;
+    }
+    .post_show_items{
+      margin: 60px 0;
+      width: 100%;
+      padding-bottom: 50px;
+      border: none;
+    }
+    .name_user_posted{
+      margin-top: 60px;
+    }
+    .prev_or_next{
+      width: 250px;
+    }
+    .post_content{
+      width: 90%;
+    }
+    .post_category{ 
+      display: flex;
+      flex-direction: column;
+    }
+    .post_show_image{
+      width: 90%;
+      height: 20%;
+      min-height: 50px;
+    }
+    .comment_to_post{
+      margin-top: 90px;
+    }
+    .comments_index{
+      width: 90%;
+    }
+    .one_comment{
+      font-size: 13px;
+    }
+    .comment_input_form{
+      width: 100%;
+    }
+    .comment_text{
+      width: 80%;
+    }
+    .move_other_container{
+      margin-top: 40px;
+      font-size: 13px;
+    }
+    .post_show_to_root_path{
+      margin-top: 30px;
+    }
+    .post_show_to_my_page{
+      margin-top: 50px;
+    }
+
+    /* post_new */
+    .new_posts_form{
+      width: 80%;
+      margin-top: 220px;
+    }
+    .new_post_image{
+      font-size: 17px;
+    }
+    .new_post_category_select{
+      font-size: 20px;
+    }
+    .new_post_title_input_form{
+      font-size: 20px;
+    }
+    .new_post_text_input_form{
+      font-size: 20px;
+    }
+    .new_posts_form h1{
+      width: 100.5%;
+      font-size: 30px;
+      padding: 40px 20px;
+    }
+    .new_post_items{
+      width: 90%;
+    }
+    .new_post_submit_btn{
+      width: 150px;
+    }
+    /* post_edit */
+    .move_post_show_btn{
+      width: 200px;
+      text-align: center;
+      padding: 17px 50px;
+    }
+    .destroy_post_btn{
+      width: 235px;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 760px) {
+    /* flash */
+    #flash_notice{
+      left: calc(10vw) ;
+    }
+    /* sign_up */
+    .sign_up_title{
+      padding: 40px 0;
+      font-size: 20px;
+    }
+    .sign_up_form{
+      width: 70%;
+      height: 740px;
+      margin-top: 300px;
+      font-size: 23px;
+    }
+    .field{
+      margin-top: 35px;
+    }
+    .input_default{
+      font-size: 25px;
+      height: 30px;
+      width: 50%;
+    }
+    .sign_up_to_root_path{
+      margin-top: 70px !important;
+    }
+    .sign_up_submit{
+      font-size: 22px;
+    }
+    .form_links{
+      font-size: 21px;
+    }
+
+    /* post_index */
+    .top_image img{
+      width: 60%;
+    }
+    .top_menu{
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 55px;
+      padding: 40px 70px;
+      justify-content: space-around;
+    }
+    .post_container{
+      width: 100%;
+      height: 280px;
+    }
+    .post_image{
+      width: 230px;
+    }
+
+    /* post_show */
+    .post_show_container{
+      background-color: white;
+    }
+    .post_show_items{
+      margin: 60px 0;
+      width: 100%;
+      padding-bottom: 50px;
+      border: none;
+    }
+    .name_user_posted{
+      margin-top: 60px;
+    }
+    .prev_or_next{
+      width: 250px;
+    }
+    .post_content{
+      width: 90%;
+    }
+    .post_category{ 
+      display: flex;
+      flex-direction: column;
+    }
+    .post_show_image{
+      width: 90%;
+      height: 20%;
+      min-height: 50px;
+    }
+    .comment_to_post{
+      margin-top: 90px;
+    }
+    .comments_index{
+      width: 90%;
+    }
+    .one_comment{
+      font-size: 13px;
+    }
+    .comment_input_form{
+      width: 100%;
+    }
+    .comment_text{
+      width: 80%;
+    }
+    .move_other_container{
+      margin-top: 40px;
+      font-size: 13px;
+    }
+    .post_show_to_root_path{
+      margin-top: 30px;
+    }
+    .post_show_to_my_page{
+      margin-top: 50px;
+    }
+
+    /* post_new */
+    .new_posts_form{
+      width: 80%;
+      margin-top: 220px;
+    }
+    .new_post_image{
+      font-size: 17px;
+    }
+    .new_post_category_select{
+      font-size: 20px;
+    }
+    .new_post_title_input_form{
+      font-size: 20px;
+    }
+    .new_post_text_input_form{
+      font-size: 20px;
+    }
+    .new_posts_form h1{
+      width: 100.5%;
+      font-size: 30px;
+      padding: 40px 20px;
+    }
+    .new_post_items{
+      width: 90%;
+    }
+    .new_post_submit_btn{
+      width: 150px;
+    }
+    /* post_edit */
+    .move_post_show_btn{
+      width: 200px;
+      text-align: center;
+      padding: 17px 50px;
+    }
+    .destroy_post_btn{
+      width: 235px;
+      text-align: center;
+    }
   }

@@ -264,6 +264,10 @@
     }
 
     /* post_index */
+    .top_image{
+      display: flex;
+      align-items: flex-start;
+    }
     .top_image img{
       width: 60%;
       height: auto;

@@ -97,7 +97,7 @@
       width: 50%;
     }
     .sign_up_to_root_path{
-      margin-top: 70px !important;
+      margin-top: 30px !important;
     }
     .sign_up_submit{
       font-size: 22px;
@@ -219,20 +219,29 @@
     }
   }
   
-  @media screen and (max-width: 415px) {
+  @media screen and (max-width: 375px) {
     /* flash */
     #flash_notice{
       left: calc(10vw) ;
     }
+    /* root_path btn */
+    .root_path_btn{
+      padding: 15px 20px;
+      font-size: 15px;
+      text-align: center;
+      border-radius: 5px 60px / 60px;
+    }
     /* sign_up */
     .sign_up_title{
-      padding: 33px 0;
+      padding: 24px 0;
+      border-radius: 5px 60px / 60px;
       font-size: 16px;
       width: 101%;
     }
     .sign_up_form{
+      border-radius: 5px 60px / 60px;
       width: 85%;
-      height: 490px;
+      height: 450px;
       margin-top: 100px;
       font-size: 15px;
     }
@@ -240,7 +249,7 @@
       margin-top: 10px;
     }
     .input_default{
-      font-size: 20px;
+      font-size: 15px;
       height: 20px;
       width: 50%;
     }
@@ -248,16 +257,16 @@
       margin-top: 70px !important;
     }
     .sign_up_submit{
-      font-size: 15px;
+      font-size: 13px;
     }
     .form_links{
-      font-size: 15px;
+      font-size: 12px;
     }
 
     /* post_index */
     .top_image img{
       width: 60%;
-      height: autoo;
+      height: auto;
     }
     .top_menu{
       font-size: 13px;
@@ -287,11 +296,15 @@
     }
     .name_user_posted{
       margin-top: 20px;
+      font-size: 15px;
     }
     .prev_or_next{
+      margin: 0 auto;
       margin-top: 20px;
-      width: 50%;
+      width: 55%;
       font-size: 13px;
+      display: flex;
+      justify-content: space-between;
     }
     .post_content{
       width: 90%;
@@ -309,13 +322,16 @@
     }
     .comment_to_post{
       margin-top: 50px;
+      font-size: 14px;
     }
     .comments_index{
       width: 90%;
-      height: 300px;
+      height: 250px;
+      border: 10px solid #2a2a2a;
     }
     .one_comment{
       font-size: 10px;
+      height: 50px;
     }
     .comment_input_form{
       width: 95%;
@@ -326,45 +342,65 @@
     .move_other_container{
       margin-top: 40px;
       font-size: 13px;
+      border-radius: 5px 60px / 60px;
     }
     .post_show_to_root_path{
+      margin: 0 auto;
       margin-top: 30px;
     }
     .post_show_to_my_page{
       margin-top: 50px;
+      font-size: 15px;
+      padding: 12px 24px;
+      text-align: center;
     }
 
     /* post_new */
     .new_post_page{
-      margin: 0;
+      margin-bottom: 100px;
     }
     .new_posts_form{
       width: 90%;
-      height: 600px;
+      height: 520px;
       margin-top: 100px;
+      border-radius: 10px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    .new_post_item_title{
+      font-size: 13px;
+      margin-top: 10px;
     }
     .new_post_image{
       font-size: 10px;
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 7px;
     }
     .new_post_category_select{
-      font-size: 10px;
+      font-size: 13px;
     }
     .new_post_title_input_form{
-      font-size: 10px;
+      font-size: 13px;
     }
     .new_post_text_input_form{
-      font-size: 10px;
+      font-size: 15px;
+      height: 140px;
     }
     .new_posts_form h1{
       width: 100.5%;
-      font-size: 15px;
-      padding: 30px 15px;
+      font-size: 20px;
+      padding: 26px 15px;
+      border-radius: 10px;
+      margin-top: ;
     }
     .new_post_items{
       width: 90%;
     }
     .new_post_submit_btn{
+      font-size: 12px;
       width: 150px;
+      margin-top: 20px;
     }
     /* post_edit */
     .move_post_show_btn{

@@ -75,7 +75,7 @@
   
   @media screen and (max-width: 960px) {
     #flash_notice{
-      left: calc(10vw) ;
+      left: calc(10vw);
     }
     /* sign_up */
     .sign_up_title{
@@ -392,7 +392,6 @@
       font-size: 20px;
       padding: 26px 15px;
       border-radius: 10px;
-      margin-top: ;
     }
     .new_post_items{
       width: 90%;
@@ -411,8 +410,5 @@
     .destroy_post_btn{
       width: 235px;
       text-align: center;
-    }
-    .div{
-      /* コードを変更しました */
     }
   }

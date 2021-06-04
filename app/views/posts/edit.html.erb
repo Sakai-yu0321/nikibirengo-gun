@@ -37,7 +37,7 @@
     <%= link_to(post_path, class:"move_post_show_btn") do %>
       <i class="fa fa-rotate-left"></i>戻る
     <% end %>
-    <%= link_to(post_path, method:"delete", data: { confirm: '本当に削除しますか？' }, class:"destroy_post_btn") do %>
+    <%= link_to(post_path, method:"delete", data: { confirm: '本当に削除しますか？' }, class:"destroy_post_btn", id:"destroy_post_btn") do %>
       <i class="fa fa-trash-o"></i>投稿を削除する
     <% end %>
     <%= render "shared/move_root_path" %>

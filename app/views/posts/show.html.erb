@@ -81,14 +81,18 @@
         </div>
       <% end %>
     </div>
-        
-    <%= form_with model: [@post, @comment], url: post_comments_path(@post.id), method: :post, class:"comment_input_form", id:"new_comment", local: true do |f| %>
-      <%= render 'shared/error_messages', model: f.object %>
-      <%= f.text_area :text, class:"comment_text" %>
-      <%= f.button :type => "submit", style: 'border-style: none;', class:"form_submit" do %>
-        <i class="fa fa-send"></i>
+
+    <% if user_signed_in? %>
+      <%= form_with model: [@post, @comment], url: post_comments_path(@post.id), method: :post, class:"comment_input_form", id:"new_comment", local: true do |f| %>
+        <%= render 'shared/error_messages', model: f.object %>
+        <%= f.text_area :text, class:"comment_text" %>
+        <%= f.button :type => "submit", style: 'border-style: none;', class:"form_submit" do %>
+          <i class="fa fa-send"></i>
+        <% end %>
       <% end %>
-    <% end %>
+    <% else %>
+      <p>コメントの投稿には新規登録/ログインが必要です</p>
+    <% end  %>
 
     <div class="move_other_container">
       <% if user_signed_in? && @post.user_id == current_user.id %>

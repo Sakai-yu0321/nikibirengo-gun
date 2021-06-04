@@ -74,7 +74,7 @@
           </div>
 
           <% if user_signed_in? && comment.user_id == current_user.id %>
-            <%= link_to post_comment_path(comment.post.id, comment.id), method: :delete, data: { confirm: '本当に削除しますか？' }, class:"comment_delete" do %>
+            <%= link_to post_comment_path(comment.post.id, comment.id), method: :delete, data: { confirm: '本当に削除しますか？' }, class:"comment_delete", id:"comment_delete_btn" do %>
              <i class="fa fa-trash"></i>
             <% end %>
           <% end %>

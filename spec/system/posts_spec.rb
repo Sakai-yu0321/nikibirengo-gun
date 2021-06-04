@@ -51,8 +51,8 @@ RSpec.describe '投稿編集', type: :system do
     @post2 = FactoryBot.create(:post)
   end
   context 'ツイート編集ができるとき' do
-    it 'ログインしたユーザーは自分が投稿したツイートの編集ができる' do
-       # ツイート1を投稿したユーザーでログインする
+    it 'ログインしたユーザーは自分が投稿した投稿の編集ができる' do
+       # post1を投稿したユーザーでログインする
        visit new_user_session_path
        fill_in 'email', with: @post1.user.email
        fill_in 'password', with: @post1.user.password
@@ -125,7 +125,7 @@ RSpec.describe '投稿削除', type: :system do
     @post1 = FactoryBot.create(:post)
     @post2 = FactoryBot.create(:post)
   end
-  context 'ツイート削除ができるとき' do
+  context '投稿削除ができるとき' do
     it 'ログインしたユーザーは自らが投稿した投稿の削除ができる' do
       # 投稿1を投稿したユーザーでログインする
       visit new_user_session_path
@@ -144,19 +144,19 @@ RSpec.describe '投稿削除', type: :system do
       # 投稿を削除するとレコードの数が1減ることを確認する
       find('#destroy_post_btn').click
       expect{
-      expect(page.accept_confirm).to eq "本当に削除しますか？"
-      expect(page).to have_content "投稿を削除しました"
+        expect(page.accept_confirm).to eq "本当に削除しますか？"
+        expect(page).to have_content "投稿を削除しました"
       }. to change{ Post.count }.by(-1)
       # トップページへ遷移したことを確認する
       expect(current_path).to eq(root_path)
       # 「投稿を削除しました」の文字があることを確認する
       expect(page).to have_content("投稿を削除しました")
-      # トップページにはツイート1の内容が存在しないことを確認する（ユーザーネーム）
+      # トップページには投稿1の内容が存在しないことを確認する（ユーザーネーム）
       expect(page).to have_no_content(@post1.user.nickname)
     end
   end
   context '投稿削除ができないとき' do
-    it 'ログインしたユーザーは自分以外が投稿したツイートの削除ができない' do
+    it 'ログインしたユーザーは自分以外が投稿した投稿の削除ができない' do
       # 投稿1を投稿したユーザーでログインする
       visit new_user_session_path
       fill_in 'email', with: @post1.user.email
@@ -168,7 +168,7 @@ RSpec.describe '投稿削除', type: :system do
       # 投稿2に「編集」へのリンクがないことを確認する
       expect(page).to have_no_link 'Edit', href: edit_post_path(@post1)
     end
-    it 'ログインしていないとツイートの削除ボタンがない' do
+    it 'ログインしていないと投稿の削除ボタンがない' do
       # トップページに移動する
       visit root_path
       # 投稿1の詳細ページへ遷移する
@@ -200,7 +200,7 @@ RSpec.describe '投稿詳細', type: :system do
     expect(page).to have_link href: post_path(@post)
     # 詳細ページに遷移する
     visit post_path(@post)
-    # 詳細ページにツイートの内容が含まれている
+    # 詳細ページに投稿の内容が含まれている
     expect(page).to have_content("ニキビで悩んだ体験談")
     expect(page).to have_content("#{@post.title}")
     expect(page).to have_content("#{@post.text}")
@@ -210,11 +210,11 @@ RSpec.describe '投稿詳細', type: :system do
   it 'ログインしていない状態で投稿詳細ページに遷移できるもののコメント投稿欄が表示されない' do
     # トップページに移動する
     visit root_path
-    # ツイートに「詳細」へのリンクがあることを確認する
+    # 投稿に「詳細」へのリンクがあることを確認する
     expect(page).to have_link href: post_path(@post)
     # 詳細ページに遷移する
     visit post_path(@post)
-    # 詳細ページにツイートの内容が含まれている
+    # 詳細ページに投稿の内容が含まれている
     expect(page).to have_content("ニキビで悩んだ体験談")
     expect(page).to have_content("#{@post.title}")
     expect(page).to have_content("#{@post.text}")

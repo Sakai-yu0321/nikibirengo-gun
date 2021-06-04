@@ -6,14 +6,14 @@ RSpec.describe "コメント投稿", type: :system do
     @comment = Faker::Lorem.sentence
   end
   
-  it 'ログインしたユーザーはコメント詳細ページでコメント投稿できる' do
+  it 'ログインしたユーザーは投稿詳細ページでコメント投稿できる' do
     # ログインする
     visit new_user_session_path
-      fill_in 'email', with: @post.user.email
-      fill_in 'password', with: @post.user.password
-      find('input[name="commit"]').click
-      expect(current_path).to eq(root_path)
-    # ツイート詳細ページに遷移する
+    fill_in 'email', with: @post.user.email
+    fill_in 'password', with: @post.user.password
+    find('input[name="commit"]').click
+    expect(current_path).to eq(root_path)
+    # 投稿詳細ページに遷移する
     visit post_path(@post)
     # フォームに情報を入力する
     fill_in 'comment[text]', with: "#{@comment}"

@@ -1,10 +1,10 @@
 <%# <%= react_component'Like', post: @post.id, url: post_likes_path(@post.id) %>
 <% if @like == nil %>
-  <%= link_to post_likes_path(@post.id), method: :post, class:"no_like" do %>
+  <%= link_to post_likes_path(@post.id), method: :post, class:"no_like", id:"no_like_btn" do %>
     <%= @likes_count %><i class="fa fa-heart-o"></i>
   <% end %>
 <% else %> 
-  <%= link_to post_like_path(@like.post.id, @like.id), method: :delete, class:"has_like" do %>
+  <%= link_to post_like_path(@like.post.id, @like.id), method: :delete, class:"has_like", id:"has_like_btn" do %>
     <%= @likes_count %><i class="fa fa-heart"></i>
   <% end %>
 <% end %>

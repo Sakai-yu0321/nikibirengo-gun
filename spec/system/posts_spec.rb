@@ -166,7 +166,7 @@ RSpec.describe '投稿削除', type: :system do
       # 投稿2の詳細ページへ遷移する
       visit post_path(@post2)
       # 投稿2に「編集」へのリンクがないことを確認する
-      expect(page).to have_no_link 'Edit', href: edit_post_path(@post1)
+      expect(page).to have_no_link 'Edit', href: edit_post_path(@post2)
     end
     it 'ログインしていないと投稿の削除ボタンがない' do
       # トップページに移動する

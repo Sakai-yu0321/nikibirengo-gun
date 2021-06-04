@@ -1,41 +1,43 @@
-<div class="root_page">
-  <div class="top_image">
-    <img src="<%= "/images/title.jpg" %>">
-  </div>
-  <ul class="top_menu">
-    <li>
-      <%= link_to 'about', root_path, class: "link" %>
-    </li>
-    <% if user_signed_in? %>
-    <li>
-      <%= link_to 'new_post', new_post_path, class: "link" %>
-    </li>
-    <li>
-      <%= link_to 'log_out', destroy_user_session_path, data: { confirm: 'ログアウトしますか？' }, method: :delete, class: "link" %>
-    </li>
-    <li>
-      <%= link_to 'my_page', user_path(current_user.id), class: "link" %>
-    </li>
-    <% else %>
-    <li>
-      <%= link_to 'sign_up', new_user_registration_path, class: "link" %>
-    </li>
-    <li>
-      <%= link_to 'log_in',new_user_session_path, class: "link" %>
-    </li>
-    <% end %>
-  </ul>
+<div class="wrapper">
+  <div class="root_page">
+    <div class="top_image">
+      <img src="<%= "/images/title.jpg" %>">
+    </div>
+    <ul class="top_menu">
+      <li>
+        <%= link_to 'about', root_path, class: "link" %>
+      </li>
+      <% if user_signed_in? %>
+      <li>
+        <%= link_to 'new_post', new_post_path, class: "link" %>
+      </li>
+      <li>
+        <%= link_to 'log_out', destroy_user_session_path, data: { confirm: 'ログアウトしますか？' }, method: :delete, class: "link" %>
+      </li>
+      <li>
+        <%= link_to 'my_page', user_path(current_user.id), class: "link" %>
+      </li>
+      <% else %>
+      <li>
+        <%= link_to 'sign_up', new_user_registration_path, class: "link" %>
+      </li>
+      <li>
+        <%= link_to 'log_in',new_user_session_path, class: "link" %>
+      </li>
+      <% end %>
+    </ul>
 
-  <div class="post_index">
-    <% @posts.each do |post| %>
-      <div class="post_container">
-        <%= link_to post_path(post.id) do %>
-            <img src="<%= "/images/nikibikun.jpg" %>" class="post_image">
-        <% end %>
-        <div class="user_nickname">
-          <%= post.user.nickname %>の投稿
+    <div class="post_index">
+      <% @posts.each do |post| %>
+        <div class="post_container">
+          <%= link_to post_path(post.id) do %>
+              <img src="<%= "/images/nikibikun.jpg" %>" class="post_image">
+          <% end %>
+          <div class="user_nickname">
+            <%= post.user.nickname %>の投稿
+          </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
-</div>  
+</div>

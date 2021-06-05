@@ -6,19 +6,6 @@
       <%= @post.user.nickname %>さんの投稿
     </div>
 
-    <div class="prev_or_next">
-    <% if @post.prev.present? %>
-    <%= link_to post_path(@post.prev), class: "prev_post" do %>
-      <i class="fa fa-arrow-circle-o-left"></i>前の投稿
-    <% end %>
-    <% end %>
-    <% if @post.next.present? %>
-    <%= link_to post_path(@post.next), class: "next_post"  do %>
-      次の投稿<i class="fa fa-arrow-circle-o-right"></i>
-    <% end %>
-    <% end %>
-    </div>
-
     <div class="post_content">
       <div class="post_title">
         title: <%= @post.title %>
@@ -49,12 +36,22 @@
       </div>
     </div>
 
+    <div class="prev_or_next">
+      <% if @post.prev.present? %>
+        <%= link_to post_path(@post.prev), class: "prev_post" do %>
+          <i class="fa fa-arrow-circle-o-left"></i>前の投稿
+        <% end %>
+      <% end %>
+      <% if @post.next.present? %>
+        <%= link_to post_path(@post.next), class: "next_post"  do %>
+          次の投稿<i class="fa fa-arrow-circle-o-right"></i>
+        <% end %>
+      <% end %>
+    </div>
+
     <% if @post.image.attached? %>
       <%= image_tag @post.image, class:"post_show_image"%>
     <% end %>
-    
-      <%# <%= link_to "前の投稿に戻る", "/posts/#{@post.previous.id}/previous", class:"choice previous_post" %>
-      <%# <%= link_to "次の投稿へ進む", "/posts/#{@post.id}/next", class:" choice next_post" %>
 
     <p class="comment_to_post"><i class="fa fa-comments"></i>comments</p>
 
@@ -91,7 +88,7 @@
         <% end %>
       <% end %>
     <% else %>
-      <p>コメントの投稿には新規登録/ログインが必要です</p>
+      <p class="impossible_action">コメントの投稿には新規登録/ログインが必要です</p>
     <% end  %>
 
     <div class="move_other_container">

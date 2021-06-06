@@ -44,6 +44,11 @@
   color: white ;
 }
 
+.link:hover{
+  position: relative;
+  top: 2px;
+}
+
 .post_index{
   display: flex;
   flex-wrap: wrap;
@@ -59,6 +64,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.post_container:active{
+  position: relative;
+  top: 3px;
+}
+
+.post_path{
+  text-decoration: none;
 }
 
 .post_image{
@@ -176,6 +190,11 @@
   border-radius: 10px 100px / 120px;
 }
 
+.new_post_submit_btn:hover{
+  position: relative;
+  top: 3px;
+}
+
 //post_show
 
 .post_show_container{
@@ -256,6 +275,10 @@
   text-decoration: none;
 }
 
+.post_edit_btn:hover{
+  filter: brightness(50%);
+}
+
 .prev_or_next{
   width: 16vw;
   display: flex;
@@ -274,6 +297,11 @@
   margin: 0 auto;
 }
 
+.prev_post:active{
+  position: relative;
+  top: 2px;
+}
+
 .next_post{
   text-decoration: none;
   color: #2a2a2a;
@@ -281,6 +309,11 @@
   align-items: center;
   width: 45%;
   margin: 0 auto;
+}
+
+.next_post:active{
+  position: relative;
+  top: 2px;
 }
 
 .fa-arrow-circle-o-left{
@@ -355,6 +388,11 @@
   margin-right: 8px;
 }
 
+.move_post_show_btn:hover{
+  position: relative;
+  top: 3px;
+}
+
 .destroy_post_btn{
   text-align: center;
   width: 200px;
@@ -369,4 +407,9 @@
 
 .fa-trash-o{
   margin-right: 8px;
+}
+
+.destroy_post_btn:hover{
+  position: relative;
+  top: 3px;
 }

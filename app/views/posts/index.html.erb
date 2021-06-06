@@ -5,7 +5,7 @@
     </div>
     <ul class="top_menu">
       <li>
-        <%= link_to 'about', root_path, class: "link" %>
+        <%= link_to 'about', home_about_path, class: "link" %>
       </li>
       <% if user_signed_in? %>
       <li>
@@ -30,12 +30,12 @@
     <div class="post_index">
       <% @posts.each do |post| %>
         <div class="post_container">
-          <%= link_to post_path(post.id) do %>
+          <%= link_to post_path(post.id), class:"post_path" do %>
               <img src="<%= "/images/nikibikun.jpg" %>" class="post_image">
-          <% end %>
           <div class="user_nickname">
             <%= post.user.nickname %>の投稿
           </div>
+          <% end %>
         </div>
       <% end %>
     </div>

@@ -23,7 +23,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
-      redirect_to root_path, notice: "投稿が完了しました"
+      redirect_to post_path(@post.id), notice: "投稿が完了しました"
     else
       render :new
     end
@@ -43,7 +43,7 @@ class PostsController < ApplicationController
 
   def destroy
     @post.destroy
-    redirect_to root_path, notice: "投稿を削除しました"
+    redirect_to root_path, alert: "投稿を削除しました"
   end
   
   private

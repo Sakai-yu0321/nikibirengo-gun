@@ -16,7 +16,7 @@ class CommentsController < ApplicationController
 
   def destroy
     Comment.find_by(id: params[:id], post_id: params[:post_id]).destroy
-    redirect_to post_path(params[:post_id])
+    redirect_to post_path(params[:post_id]), alert:"コメントを削除しました"
   end
 
   private

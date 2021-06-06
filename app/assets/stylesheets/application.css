@@ -289,14 +289,14 @@
       align-items: flex-start;
     }
     .top_image img{
-      width: 60%;
+      width: 180px;
       height: auto;
     }
     .top_menu{
       font-size: 13px;
       width: 90%;
       margin: 0 auto;
-      margin-top: 55px;
+      margin-top: 40px;
       padding: 25px 10px;
       justify-content: space-around;
     }

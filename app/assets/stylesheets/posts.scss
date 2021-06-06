@@ -24,7 +24,7 @@
 }
 
 .top_image img{
-  width: 350px;
+  width: 280px;
   margin-top: 60px;
   margin-bottom: 10px;
 }
@@ -340,13 +340,14 @@
 }
 
 .move_post_show_btn{
-  width: 180px;
+  text-align: center;
+  width: 200px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-decoration: none;
   color: white;
   background-color: #1fb5bf;
-  padding: 18px 50px;
+  padding: 15px 50px;
   border-radius: 10px 100px / 100px;
 }
 
@@ -355,13 +356,14 @@
 }
 
 .destroy_post_btn{
-  width: 180px;
+  text-align: center;
+  width: 200px;
   margin: 0 auto;
   margin-bottom: 50px;
   text-decoration: none;
   color: white;
   background-color: #800000;
-  padding: 18px 50px;
+  padding: 15px 0;
   border-radius: 10px 100px / 100px;
 }
 

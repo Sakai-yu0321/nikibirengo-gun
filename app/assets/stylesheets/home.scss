@@ -1,3 +1,48 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.about_app{
+  width: 100vw;
+}
+
+.app_title h2{
+  width: 330px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 190px;
+  background-color: #2a2a2a;
+  color: white;
+  padding: 24px 20px;
+  border-radius: 20px;
+}
+
+.app_title p{
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.production_background h2{
+  width: 330px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #2a2a2a;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.production_background p{
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.about_app_to_top_page{
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+  margin-bottom: 200px;
+}

@@ -527,10 +527,16 @@
     .move_post_show_btn{
       width: 200px;
       text-align: center;
-      padding: 17px 50px;
+      padding: 14px;
+      font-size: 12px;
+      border-radius: 50px;
+      margin-bottom: 20px;
     }
     .destroy_post_btn{
-      width: 235px;
+      width: 200px;
       text-align: center;
+      padding: 14px;
+      font-size: 12px;
+      border-radius: 50px;
     }
   }

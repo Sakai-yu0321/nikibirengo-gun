@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'home/about'
+  get 'home/contact'
   get 'posts/index'
   devise_for :users
   resources :users, only: [:show]

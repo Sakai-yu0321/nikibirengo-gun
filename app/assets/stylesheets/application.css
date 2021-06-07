@@ -59,7 +59,7 @@
     width: 250px;
     background-color: #2a2a2a;
     padding: 18px 40px;
-    border-radius: 10px 100px / 100px;
+    border-radius: 50px;
     text-decoration: none;
     color: white;
     margin: 0 auto;
@@ -263,6 +263,19 @@
     .about_app_to_top_page{
       margin-top: 100px;
       margin-bottom: 150px;
+    }
+    .about_app_footer{
+      font-size: 10px;
+      height: 80px;
+    }
+    /* contact_form */
+    .form_title{
+      font-size: 13px;
+      width: 250px;
+      padding: 18px;
+    }
+    .googleform-wrapper {
+      width: 90%;
     }
     /* my_page */
     .user_my_page_title{

@@ -595,7 +595,17 @@
       font-size: 10px;
     }
     .search_method{
-      padding-top: 20px;
+      padding-top: 33px;
+      margin-top: 160px;
+    }
+    .search_input{
+      width: 180px;
+    }
+    .search_form p{
+      font-size: 14px;
+    }
+    .sort_form p{
+      font-size: 14px;
     }
     /* search_post */
     .search_posts_title{

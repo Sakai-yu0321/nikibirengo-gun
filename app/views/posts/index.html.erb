@@ -25,7 +25,19 @@
         <%= link_to 'log_in',new_user_session_path, class: "link" %>
       </li>
       <% end %>
+      <li>
+        <i id="search-show", class="fa fa-search"></i>
+      </li>
     </ul>
+
+    <div id="search_modal", class="search_form_wrapper">
+      <%= form_with url: search_posts_path, local: true, method: :get, class: "search_form" do |f| %>
+        <%= f.text_field :keyword, placeholder: "投稿を検索する", class: "search_input" %>
+        <%= f.button :type => "submit", style: 'border-style: none;', class:"search_btn" do %>
+          <i class="fa fa-search"></i>
+        <% end %>
+      <% end %>
+    </div>
 
     <div class="post_index">
       <% @posts.each do |post| %>

@@ -401,6 +401,9 @@
       width: 90%;
       height: 200px;
     }
+    .search_form p{
+      margin-top: 50px;
+    }
     /* search_post */
     .search_posts_title{
       font-size: 13px;

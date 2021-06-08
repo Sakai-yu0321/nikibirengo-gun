@@ -32,12 +32,15 @@
 
     <div id="search_modal", class="search_form_wrapper">
       <%= form_with url: search_posts_path, local: true, method: :get, class: "search_form" do |f| %>
-        <%= f.text_field :keyword, placeholder: "投稿を検索する", class: "search_input" %>
-        <%= f.button :type => "submit", style: 'border-style: none;', class:"search_btn" do %>
-          <i class="fa fa-search"></i>
-        <% end %>
-        <div class="search_close", id="close_modal">
-         <i class="fa fa-close"></i>
+        <b><em><p>投稿検索</p></em></b>
+        <div class="search_box">
+          <%= f.text_field :keyword, placeholder: "投稿を検索する", class: "search_input" %>
+          <%= f.button :type => "submit", style: 'border-style: none;', class:"search_btn" do %>
+            <i class="fa fa-search"></i>
+          <% end %>
+          <div class="search_close", id="close_modal">
+           <i class="fa fa-close"></i>
+          </div>
         </div>
       <% end %>
     </div>

@@ -7,6 +7,10 @@ class PostsController < ApplicationController
     @posts = Post.order("created_at DESC")
   end
 
+  def search
+    @posts = Post.search(params[:keyword])
+  end
+
   def show
     @comment = Comment.new
     @comments = @post.comments.order("created_at DESC").includes(:user)

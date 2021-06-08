@@ -397,7 +397,30 @@
     .user_nickname{
       font-size: 10px;
     }
-
+    .search_form{
+      width: 90%;
+      height: 200px;
+    }
+    .search_form p{
+      margin-top: 50px;
+    }
+    /* search_post */
+    .search_posts_title{
+      font-size: 13px;
+      width: 200px;
+      padding: 18px;
+    }
+    .searched_post_to_top{
+      margin-top: 20px;
+    }
+    .search_post_content{
+      width: 90%;
+      margin-top: 20px;
+      font-size: 13px;
+    }
+    .no_post{
+      font-size: 12px;
+    }
     /* post_show */
     .post_show_container{
       background-color: white;

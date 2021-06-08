@@ -12,4 +12,12 @@ class Post < ApplicationRecord
     validates :title, length: { maximum: 40 }
     validates :text
   end
+
+  def self.search(search)
+    if search != ""
+      Post.where('text LIKE(?)', "%#{search}%")
+    else
+      Post.all
+    end
+  end
 end

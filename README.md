@@ -54,6 +54,24 @@
 
 ## 使用技術
 
+### バックエンド
+##### Ruby, Ruby on Rails
+
+### フロントエンド
+##### HTML, CSS, javaScript(JQuery) 
+
+### データベース
+##### MySQL, Sequel Pro
+
+### ソース管理
+##### GitHub
+
+### テスト
+##### RSpec
+
+### エディタ
+##### VSCode
+
 #### HTML・CSS・Ruby・Ruby on Rails・jQuary・RSpec
 
 ## 課題や今後実装したい機能

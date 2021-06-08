@@ -397,7 +397,10 @@
     .user_nickname{
       font-size: 10px;
     }
-
+    .search_form{
+      width: 90%;
+      height: 200px;
+    }
     /* search_post */
     .search_posts_title{
       font-size: 13px;
@@ -415,7 +418,6 @@
     .no_post{
       font-size: 12px;
     }
-
     /* post_show */
     .post_show_container{
       background-color: white;

@@ -26,7 +26,7 @@
       </li>
       <% end %>
       <li>
-        <i id="search-show", class="fa fa-search"></i>
+        <i id="search_show", class="fa fa-search"></i>
       </li>
     </ul>
 
@@ -36,6 +36,9 @@
         <%= f.button :type => "submit", style: 'border-style: none;', class:"search_btn" do %>
           <i class="fa fa-search"></i>
         <% end %>
+        <div class="search_close", id="close_modal">
+         <i class="fa fa-close"></i>
+        </div>
       <% end %>
     </div>
 

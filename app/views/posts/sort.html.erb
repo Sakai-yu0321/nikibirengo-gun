@@ -13,25 +13,26 @@
 
 <% if @posts != [] %>
   <div class="searched_posts">
+
     <% @posts.each do |post| %>
       <%= link_to post_path(post.id), class:"search_post_content" do %>
-  
+
         <div class="post_title">
           title: <%= post.title %>
         </div>
-  
+
         <div class="post_category">
           <div>category: </div><%= post.category.name %>
         </div>
-  
+
         <div class="post_text">
           <%= post.text %>
         </div>
-  
+
         <div class="post_created_at">
           <%= l post.created_at %>
         </div>
-  
+
       <% end %>
     <% end %>
   </div>

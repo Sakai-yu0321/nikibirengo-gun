@@ -27,8 +27,8 @@ RSpec.describe "新規投稿", type: :system do
       expect{
         find('input[name="commit"]').click
       }.to change { Post.count }.by(1)
-      # トップページに遷移することを確認する
-      expect(current_path).to eq(root_path)
+      # 投稿詳細ページに遷移することを確認する
+      expect(current_path).to eq(post_path(@user.posts.ids))
       # 「投稿が完了しました」の文字があることを確認する
       expect(page).to have_content('投稿が完了しました')
       # トップページには先ほど投稿した投稿が存在することを確認する（ユーザーネーム）
@@ -223,4 +223,8 @@ RSpec.describe '投稿詳細', type: :system do
     # 「コメントの投稿には新規登録/ログインが必要です」が表示されていることを確認する
     expect(page).to have_content 'コメントの投稿には新規登録/ログインが必要です'
   end
+end
+
+RSpec.describe '投稿検索', type: :system do
+  it ''
 end

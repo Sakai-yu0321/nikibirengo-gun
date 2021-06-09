@@ -1,11 +1,15 @@
 <div class="wrapper">
   <div class="root_page">
+
     <div class="top_image">
       <img src="<%= "/images/phonto 2.jpg" %>">
     </div>
+    
     <ul class="top_menu">
       <li>
-        <%= link_to 'about', home_about_path, class: "link" %>
+        <%= link_to home_about_path, class: "link" do %>
+          <i class="fa fa-question"></i>
+        <% end %>
       </li>
       <% if user_signed_in? %>
       <li>
@@ -45,6 +49,7 @@
           </div>
         </div>
       <% end %>
+
       <%= form_with url: search_posts_path, local: true, method: :get, class:"search_form" do |f| %>
         <b><em><p>投稿検索<p></em></b>
         <div class="search_box">
@@ -72,5 +77,6 @@
         </div>
       <% end %>
     </div>
+
   </div>
 </div>

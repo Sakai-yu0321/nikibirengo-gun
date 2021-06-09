@@ -10,6 +10,7 @@
   width: 380px;
   box-shadow: 0px 2px 5px rgba(0,0,0,.25);
   border-radius: 10px 60px / 128px;
+  background-color: white;
 }
 
 .account_create{
@@ -75,10 +76,19 @@
 .form_links{
   background-color: #1fb5bf;
   font-size: 13px;
-  padding: 7px 30px;
+  padding: 10px 20px;
   text-decoration: none;
   color: white;
   border-radius: 10px 100px / 120px;
+}
+
+.nikibityan_comment{
+  width: 300px;
+  position: relative;
+  top: -150px;
+  left: 400px;
+  border-radius: 30px;
+  margin-bottom: -300px;
 }
 
 .sign_up_to_root_path{

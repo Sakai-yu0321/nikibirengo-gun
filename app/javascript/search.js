@@ -5,4 +5,3 @@ $(document).on('click', '#search_show', function(){
 $(document).on('click', '#close_modal', function(){
   $('#search_modal').fadeOut();
 });
-

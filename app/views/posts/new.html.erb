@@ -1,7 +1,9 @@
+<%= render "./home/title"%>
+
 <div class="new_post_page">
   <%= form_with model: @post, url: posts_path, class:"new_posts_form", local: true do |f| %>
 
-    <h1>Create your new post</h1>
+    <h1>投稿を新しく作る</h1>
 
     <% if @post.errors.any? %>
     <div class="new_post_error_messages">
@@ -32,6 +34,9 @@
 
     </div>
   <% end %>
+
+  <img src="<%= "/images/ニキビちゃんコメント3.jpg" %>", class="nikibityan_comment3">
+
   
   <%= render "shared/move_root_path" %>
   

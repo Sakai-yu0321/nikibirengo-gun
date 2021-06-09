@@ -1,19 +1,21 @@
+<div class="wrapper">
+<%= render "/home/title"%>
 <div class="sign_up_page">
 
   <div class="sign_up_form">
 
     <div class="sign_up_title">
-      <h2>Login to your account</h2>
+      <h2>レッツログイン</h2>
     </div>
 
     <%= form_with model: @user, url: user_session_path, class: 'account_create', local: true do |f| %>
       <div class="field">
-        <%= f.label :email, "email", class: "form_label" %><br />
+        <%= f.label :email, "メールアドレス", class: "form_label" %><br />
         <%= f.email_field :email, class:"input_default", autofocus: true, autocomplete: "email" %>
       </div>
 
       <div class="field">
-        <%= f.label :password, "password", class: "form_label" %><br />
+        <%= f.label :password, "パスワード", class: "form_label" %><br />
         <%= f.password_field :password, class:"input_default", autocomplete: "current-password" %>
       </div>
 
@@ -25,7 +27,7 @@
       <% end %>
 
       <div class="actions">
-        <%= f.submit "Log in", class: "sign_up_submit" %>
+        <%= f.submit "ログイン", class: "sign_up_submit" %>
       </div>
     <% end %>
 
@@ -33,8 +35,11 @@
       <%= render "devise/shared/links" %>
     </div>
   </div>
+  
+ <img src="<%= "/images/ニキビちゃんコメント2.jpg" %>", class="nikibityan_comment">
 
   <div class="sign_up_to_root_path">
     <%= render "shared/move_root_path" %>
   </div>
+</div>
 </div>

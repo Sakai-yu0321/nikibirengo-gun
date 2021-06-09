@@ -80,14 +80,16 @@
   margin-top: 100px;
 }
 
-.move_to_user_destroy{
+.move_to_user_edit{
+  width: 250px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   color: white;
-  background-color: #990000;
-  padding: 5px 20px;
-  border-radius: 10px 100px / 120px;
+  background-color: #1fb5bf;
+  padding: 14px;
+  border-radius: 50px;
   display: flex;
   justify-content: center;
-  margin: 30px 200px;
+  margin: 0 auto;
+  margin-top: 50px;
 }

@@ -18,7 +18,7 @@
       </div>
 
       <div class="post_text">
-        <%= @post.text %>
+        <%= simple_format @post.text %>
       </div>
 
       <div class="post_created_at">
@@ -66,9 +66,9 @@
           </div>
 
           <div class="one_comment_text">
-            <%= comment.text %>
+            <%= simple_format comment.text %>
             <div class="comment_created_at">
-              <%= comment.created_at %>
+              <%= l comment.created_at %>
             </div>
           </div>
 

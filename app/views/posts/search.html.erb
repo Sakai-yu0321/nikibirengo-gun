@@ -30,6 +30,18 @@
 
       <div class="post_created_at">
         <%= l post.created_at %>
+        <div class="like_and_edit">
+          <% if user_signed_in? %>
+            <div class="heart_btn">
+              <%= render partial: 'like_btn'%>
+            </div>
+            <% if post.user_id == current_user.id %>
+              <%= link_to(edit_post_path(post.id), class:"post_edit_btn") do %>
+                <i class="fa fa-edit"></i>Edit
+              <% end %>
+            <% end %>
+          <% end %>
+        </div>
       </div>
 
     <% end %>

@@ -9,17 +9,17 @@
     </li>
     <% if user_signed_in? %>
     <li>
-      <%= link_to '新規とうこう👍', new_post_path, class: "link" %>
+      <%= link_to '新規投稿', new_post_path, class: "link" %>
     </li>
     <li>
-      <%= link_to 'ログアウト!', destroy_user_session_path, data: { confirm: 'まじで？' }, method: :delete, class: "link" %>
+      <%= link_to 'ログアウト', destroy_user_session_path, data: { confirm: 'まじで？' }, method: :delete, class: "link" %>
     </li>
     <li>
-      <%= link_to 'マイページ😃', user_path(current_user.id), class: "link" %>
+      <%= link_to 'マイページ', user_path(current_user.id), class: "link" %>
     </li>
     <% else %>
     <li>
-      <%= link_to '新規とうろく', new_user_registration_path, class: "link" %>
+      <%= link_to '新規登録', new_user_registration_path, class: "link" %>
     </li>
     <li>
       <%= link_to 'ログイン',new_user_session_path, class: "link" %>
@@ -34,7 +34,7 @@
     <% @posts.each do |post| %>
       <div class="post_container">
         <%= link_to post_path(post.id), class:"post_path" do %>
-            <img src="<%= "/images/ニキビちゃん！.jpg" %>" class="post_image">
+            <img src="<%= "/images/nikibikun.jpg" %>" class="post_image">
         <div class="user_nickname">
           <%= post.user.nickname %>の投稿
         </div>

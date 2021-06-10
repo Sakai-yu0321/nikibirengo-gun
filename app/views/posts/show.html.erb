@@ -1,6 +1,7 @@
 <%= render "./home/title"%>
 
 <div class="post_show_container">
+  <div class="wrapper">
   <div class="post_show_items">
 
     <div class="name_user_posted">
@@ -18,7 +19,7 @@
       </div>
 
       <div class="post_text">
-        <%= @post.text %>
+        <%= simple_format raw Rinku.auto_link(@post.text, :all, 'target="_blank"') %>
       </div>
 
       <div class="post_created_at">
@@ -55,7 +56,7 @@
       <%= image_tag @post.image, class:"post_show_image"%>
     <% end %>
 
-    <p class="comment_to_post"><i class="fa fa-comments"></i>comments</p>
+    <p class="comment_to_post"><i class="fa fa-comments"></i>コメント</p>
 
     <div class="comments_index">
       <% @comments.each do |comment| %>
@@ -66,9 +67,9 @@
           </div>
 
           <div class="one_comment_text">
-            <%= comment.text %>
+            <%= simple_format comment.text %>
             <div class="comment_created_at">
-              <%= comment.created_at %>
+              <%= l comment.created_at %>
             </div>
           </div>
 
@@ -104,5 +105,6 @@
         <%= render "shared/move_root_path"%>
       </div>
     </div>
+  </div>
   </div>
 </div>

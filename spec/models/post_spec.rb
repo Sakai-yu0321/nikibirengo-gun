@@ -25,17 +25,17 @@ RSpec.describe Post, type: :model do
       it 'category_idが1の場合登録できない' do
         @post.category_id = 1
         @post.valid?
-        expect(@post.errors.full_messages).to include "Category must be other than 1"
+        expect(@post.errors.full_messages).to include 'Category must be other than 1'
       end
       it 'userが紐づいていない場合登録できない' do
         @post.user = nil
         @post.valid?
-        expect(@post.errors.full_messages).to include "User must exist"
+        expect(@post.errors.full_messages).to include 'User must exist'
       end
       it 'titleが40字より多い場合登録できない' do
-        @post.title =  Faker::Name.initials(number: 41)
+        @post.title = Faker::Name.initials(number: 41)
         @post.valid?
-        expect(@post.errors.full_messages).to include "Title is too long (maximum is 40 characters)"
+        expect(@post.errors.full_messages).to include 'Title is too long (maximum is 40 characters)'
       end
     end
   end

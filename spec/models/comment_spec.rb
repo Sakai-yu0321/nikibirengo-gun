@@ -20,12 +20,12 @@ RSpec.describe Comment, type: :model do
       it 'userが紐づいていない場合投稿できない' do
         @comment.user = nil
         @comment.valid?
-        expect(@comment.errors.full_messages).to include "User must exist"
+        expect(@comment.errors.full_messages).to include 'User must exist'
       end
       it 'postが紐づいていない場合投稿できない' do
         @comment.post = nil
         @comment.valid?
-        expect(@comment.errors.full_messages).to include "Post must exist"
+        expect(@comment.errors.full_messages).to include 'Post must exist'
       end
     end
   end

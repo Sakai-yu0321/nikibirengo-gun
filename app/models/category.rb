@@ -7,10 +7,9 @@ class Category < ActiveHash::Base
     { id: 5, name: 'ニキビを減らしたいならやってはいけないこと' },
     { id: 6, name: 'ニキビができる食べ物' },
     { id: 7, name: 'ニキビのここが嫌' },
-    { id: 8, name: 'その他'}
+    { id: 8, name: 'その他' }
   ]
 
   include ActiveHash::Associations
   has_many :posts
-
-  end
+end

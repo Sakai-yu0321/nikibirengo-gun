@@ -74,3 +74,5 @@ gem 'react-rails'
 gem 'rails-i18n'
 
 gem 'rinku'
+
+gem "aws-sdk-s3", require: false

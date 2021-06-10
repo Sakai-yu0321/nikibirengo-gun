@@ -193,6 +193,9 @@
       width: 90%;
     }
     /* my_page */
+    .user_my_page_container{
+      margin-top: 100px;
+    }
     .user_my_page_title{
       font-size: 7px;
       border-radius: 50px;
@@ -584,6 +587,9 @@
       width: 90%;
     }
     /* my_page */
+    .user_my_page_container{
+      margin-top: 100px;
+    }
     .user_my_page_title{
       font-size: 7px;
       border-radius: 50px;

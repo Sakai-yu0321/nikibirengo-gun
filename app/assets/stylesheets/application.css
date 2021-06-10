@@ -114,7 +114,394 @@
   }
   
   @media screen and (max-width: 960px) {
+    /* flash */
+    #flash_notice{
+      left: calc(10vw);
+      font-size: 10px;
+    }
+    #flash_alert{
+      left: calc(10vw);
+      font-size: 10px;
+    }
+    /* header */
+    .nikibirengo-gun_header{
+      height: 60px;
+    }
+    .header_left img{
+      height: 20px;
+      margin-left: 6px;
+    }
+    .header_right{
+      width: 240px;
+      margin-right: 8px;
+    }
+    .link2{
+      font-size: 10px;
+    }
+    .header_search{
+      font-size: 10px;
+    }
+    /* root_path btn */
+    .root_path_btn{
+      width: 165px;
+      padding: 15px 20px;
+      font-size: 10px;
+      text-align: center;
+      border-radius: 50px;
+    }
+    /* about_app */
+    .app_title h2{
+      width: 220px;
+      font-size: 14px;
+      border-radius: 50px;
+      padding: 18px;
+      margin-top: 100px;
+    }
+    .app_title p{
+      width: 90%;
+      font-size: 13px;
+    }
+    .production_background h2{
+      width: 220px;
+      font-size: 14px;
+      border-radius: 50px;
+      padding: 18px;
+      margin-top: 50px;
+    }
+    .production_background p{
+      width: 90%;
+      font-size: 13px;
+    }
+    .nikibityan_comment4{
+      display: none;
+    }
+    .about_app_to_top_page{
+      margin-top: 100px;
+      margin-bottom: 150px;
+    }
+    .about_app_footer{
+      font-size: 10px;
+      height: 80px;
+    }
+    /* contact_form */
+    .form_title{
+      font-size: 13px;
+      width: 250px;
+      padding: 18px;
+    }
+    .googleform-wrapper {
+      width: 90%;
+    }
+    /* my_page */
+    .user_my_page_title{
+      font-size: 7px;
+      border-radius: 50px;
+      width: 200px;
+      padding: 18px;
+    }
+    .user_posts_index{
+      font-size: 7px;
+      width: 300px;
+      border-radius: 50px;
+      margin: 0 auto;
+      margin-top: 40px;
+      padding: 18px;
+    }
+    .user_post{
+      font-size: 10px;
+      width: 90vw;
+      margin: 0 auto;
+      margin-top: 20px;
+      height: 220px;
+    }
+    .liked_posts{
+      font-size: 7px;
+      border-radius: 50px;
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 20px;
+      padding: 20px;
+    }
+    .user_like{
+      width: 90vw;
+      margin: 0 auto;
+      margin-top: 20px;
+      height: 220px;
+    }
+    .liked_post{
+      font-size: 10px;
+    }
+    /* sign_up */
+    .sign_up_title{
+      padding: 26px 0;
+      border-radius: 35px;
+      font-size: 16px;
+      width: 101%;
+      margin-top: -10px;
+    }
+    .error_explanation h2{
+      font-size: 10px;
+    }
+    .error_messages{
+      margin: 0;
+      font-size: 10px;
+      margin-bottom: -20px;
+    }
+    .sign_up_form{
+      border-radius: 30px;
+      width: 85%;
+      height: 450px;
+      margin-top: 120px;
+      font-size: 15px;
+    }
+    .field{
+      margin-top: 7px;
+    }
+    .input_default{
+      font-size: 15px;
+      height: 20px;
+      width: 50%;
+    }
+    .sign_up_to_root_path{
+      margin-top: 70px !important;
+    }
+    .sign_up_submit{
+      font-size: 10px;
+      border-radius: 50px;
+    }
+    .form_links{
+      font-size: 10px;
+      border-radius: 50px;
+    }
+    .nikibityan_comment{
+      width: 200px;
+      position: relative;
+      top: 10px;
+      left: 0;
+      margin-bottom: -20px;
+    }
 
+    /* post_index */
+    .wrapper::before{
+      background-color: rgba(255,255,255,0.8);
+    }
+    .top_image{
+      display: flex;
+      align-items: flex-start;
+    }
+    .top_image img{
+      width: 180px;
+      height: auto;
+    }
+    .top_menu{
+      font-size: 13px;
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 40px;
+      padding: 25px 10px;
+      justify-content: space-around;
+    }
+    .link{
+      font-size: 10px;
+    }
+    .post_index{
+      margin-top: 30px;
+    }
+    .post_container{
+      width: 33%;
+      margin: 0 auto;
+      height: 130px;
+      text-align: center;
+    }
+    .post_image{
+      width: 70%;
+    }
+    .user_nickname{
+      font-size: 10px;
+    }
+    .search_method{
+      padding-top: 20px;
+      margin-top: 160px;
+      width: 90vw;
+      height: 220px;
+    }
+    .search_input{
+      width: 180px;
+    }
+    .search_form p{
+      font-size: 14px;
+    }
+    .sort_form p{
+      font-size: 14px;
+    }
+    /* search_post */
+    .search_posts_title{
+      font-size: 13px;
+      width: 200px;
+      padding: 18px;
+    }
+    .searched_post_to_top{
+      margin-top: 20px;
+    }
+    .search_post_content{
+      width: 90%;
+      margin-top: 20px;
+      font-size: 13px;
+    }
+    .no_post{
+      font-size: 12px;
+    }
+    /* post_show */
+    .post_show_container{
+      background-color: white;
+    }
+    .post_show_items{
+      margin: 60px 0;
+      padding-bottom: 50px;
+      border: none;
+      width: 100vw;
+    }
+    .post_content{
+      width: 90vw;
+    }
+    .name_user_posted{
+      margin-top: 20px;
+      font-size: 15px;
+    }
+    .prev_or_next{
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 55%;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .post_content{
+      width: 90%;
+      margin-top: 20px;
+      font-size: 13px;
+    }
+    .post_category{ 
+      display: flex;
+      flex-direction: column;
+    }
+    .post_show_image{
+      width: 90%;
+      height: 20%;
+      min-height: 50px;
+    }
+    .comment_to_post{
+      margin-top: 50px;
+      font-size: 14px;
+    }
+    .comments_index{
+      width: 90%;
+      height: 250px;
+      border: 10px solid #2a2a2a;
+    }
+    .one_comment{
+      font-size: 10px;
+      height: 50px;
+    }
+    .comment_input_form{
+      width: 95%;
+    }
+    .comment_text{
+      width: 75%;
+      height: 25px;
+    }
+    .fa-send{
+      font-size: 10px;
+    }
+    .impossible_action{
+      font-size: 10px;
+    }
+    .move_other_container{
+      margin-top: 40px;
+      font-size: 13px;
+      border-radius: 5px 60px / 60px;
+    }
+    .post_show_to_root_path{
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+    .post_show_to_my_page{
+      margin-top: 50px;
+      font-size: 10px;
+      border-radius: 50px;
+      padding: 12px 24px;
+      text-align: center;
+    }
+
+    /* post_new */
+    .new_post_page{
+      margin-bottom: 100px;
+    }
+    .new_posts_form{
+      width: 90%;
+      height: 520px;
+      margin-top: 100px;
+      border-radius: 10px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    .new_post_item_title{
+      font-size: 13px;
+      margin-top: 10px;
+    }
+    .new_post_image{
+      font-size: 10px;
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 7px;
+    }
+    .new_post_category_select{
+      font-size: 13px;
+    }
+    .new_post_title_input_form{
+      font-size: 13px;
+    }
+    .new_post_text_input_form{
+      font-size: 15px;
+      height: 140px;
+    }
+    .new_posts_form h1{
+      width: 100.5%;
+      font-size: 20px;
+      padding: 26px 15px;
+      border-radius: 10px;
+    }
+    .new_post_items{
+      width: 90%;
+    }
+    .new_post_submit_btn{
+      font-size: 12px;
+      width: 150px;
+      margin-top: 20px;
+    }
+    .nikibityan_comment3{
+      position: relative;
+      top: -45px;
+      left: 30vw;
+      width: 40vw;
+      margin-bottom: 0;
+    }
+    /* post_edit */
+    .move_post_show_btn{
+      width: 200px;
+      text-align: center;
+      padding: 14px;
+      font-size: 12px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+    .destroy_post_btn{
+      width: 200px;
+      text-align: center;
+      padding: 14px;
+      font-size: 12px;
+      border-radius: 50px;
+    }
   }
   
   @media screen and (max-width: 375px) {
@@ -326,6 +713,8 @@
     .search_method{
       padding-top: 20px;
       margin-top: 160px;
+      width: 90vw;
+      height: 220px;
     }
     .search_input{
       width: 180px;
@@ -359,9 +748,12 @@
     }
     .post_show_items{
       margin: 60px 0;
-      width: 100%;
       padding-bottom: 50px;
       border: none;
+      width: 100vw;
+    }
+    .post_content{
+      width: 90vw;
     }
     .name_user_posted{
       margin-top: 20px;

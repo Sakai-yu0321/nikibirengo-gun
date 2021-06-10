@@ -9,8 +9,8 @@ RSpec.describe "コメント投稿", type: :system do
   it 'ログインしたユーザーは投稿詳細ページでコメント投稿できる' do
     # ログインする
     visit new_user_session_path
-    fill_in 'email', with: @post.user.email
-    fill_in 'password', with: @post.user.password
+    fill_in 'メールアドレス', with: @post.user.email
+    fill_in 'パスワード', with: @post.user.password
     find('input[name="commit"]').click
     expect(current_path).to eq(root_path)
     # 投稿詳細ページに遷移する
@@ -38,8 +38,8 @@ RSpec.describe "コメント削除", type: :system do
     it 'ログインしたユーザーは自らが投稿したコメントの削除ができる' do
       # コメント1を投稿したユーザーでログインする
       visit new_user_session_path
-      fill_in 'email', with: @comment1.user.email
-      fill_in 'password', with: @comment1.user.password
+      fill_in 'メールアドレス', with: @comment1.user.email
+      fill_in 'パスワード', with: @comment1.user.password
       find('input[name="commit"]').click
       expect(current_path).to eq(root_path)
       # コメント1を投稿した投稿の詳細ページへ遷移する
@@ -62,8 +62,8 @@ RSpec.describe "コメント削除", type: :system do
     it 'ログインしたユーザーは自分以外が投稿したコメントの削除ができない' do
        # コメント1を投稿したユーザーでログインする
        visit new_user_session_path
-       fill_in 'email', with: @comment1.user.email
-       fill_in 'password', with: @comment1.user.password
+       fill_in 'メールアドレス', with: @comment1.user.email
+       fill_in 'パスワード', with: @comment1.user.password
        find('input[name="commit"]').click
        expect(current_path).to eq(root_path)
        # コメント2が投稿された投稿の詳細ページへ遷移する

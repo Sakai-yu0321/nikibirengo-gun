@@ -9,20 +9,20 @@
     </li>
     <% if user_signed_in? %>
     <li>
-      <%= link_to '新規投稿', new_post_path, class: "link" %>
+      <%= link_to 'とうこう', new_post_path, class: "link" %>
     </li>
     <li>
-      <%= link_to 'ログアウト', destroy_user_session_path, data: { confirm: 'まじで？' }, method: :delete, class: "link" %>
+      <%= link_to 'ろぐあうと', destroy_user_session_path, data: { confirm: 'まじで？' }, method: :delete, class: "link" %>
     </li>
     <li>
-      <%= link_to 'マイページ', user_path(current_user.id), class: "link" %>
+      <%= link_to 'まいぺーじ', user_path(current_user.id), class: "link" %>
     </li>
     <% else %>
     <li>
-      <%= link_to '新規登録', new_user_registration_path, class: "link" %>
+      <%= link_to 'とうろく', new_user_registration_path, class: "link" %>
     </li>
     <li>
-      <%= link_to 'ログイン',new_user_session_path, class: "link" %>
+      <%= link_to 'ろぐいん',new_user_session_path, class: "link" %>
     </li>
     <% end %>
     <li>

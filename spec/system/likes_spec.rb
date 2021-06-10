@@ -8,8 +8,8 @@ RSpec.describe "いいねを追加", type: :system do
   it 'ログインしたユーザーは投稿詳細ページでいいねを追加できる' do
     # ログインする
     visit new_user_session_path
-    fill_in 'email', with: @post.user.email
-    fill_in 'password', with: @post.user.password
+    fill_in 'メールアドレス', with: @post.user.email
+    fill_in 'パスワード', with: @post.user.password
     find('input[name="commit"]').click
     expect(current_path).to eq(root_path)
     # 投稿詳細ページに遷移する
@@ -38,8 +38,8 @@ RSpec.describe "いいねを削除", type: :system do
     it 'ログインしたユーザーは自らが追加したいいねの削除ができる' do
        # いいね1を追加したユーザーでログインする
        visit new_user_session_path
-       fill_in 'email', with: @like1.user.email
-       fill_in 'password', with: @like1.user.password
+       fill_in 'メールアドレス', with: @like1.user.email
+       fill_in 'パスワード', with: @like1.user.password
        find('input[name="commit"]').click
        expect(current_path).to eq(root_path)
        # いいね1が追加された投稿の詳細ページへ遷移する
@@ -61,8 +61,8 @@ RSpec.describe "いいねを削除", type: :system do
     it 'ログインしたユーザーは自分以外が追加したいいねの削除ができない' do
        # いいね1を追加したユーザーでログインする
        visit new_user_session_path
-       fill_in 'email', with: @like1.user.email
-       fill_in 'password', with: @like1.user.password
+       fill_in 'メールアドレス', with: @like1.user.email
+       fill_in 'パスワード', with: @like1.user.password
        find('input[name="commit"]').click
        expect(current_path).to eq(root_path)
        # いいね2が追加された投稿の詳細ページへ遷移する

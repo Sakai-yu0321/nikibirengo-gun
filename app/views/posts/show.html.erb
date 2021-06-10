@@ -18,7 +18,7 @@
       </div>
 
       <div class="post_text">
-        <%= simple_format @post.text %>
+        <%= simple_format raw Rinku.auto_link(@post.text, :all, 'target="_blank"') %>
       </div>
 
       <div class="post_created_at">

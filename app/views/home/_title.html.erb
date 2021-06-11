@@ -2,16 +2,22 @@
   <%= link_to root_path, class:"header_left" do %>
     <img src="<%= "/images/app_title.jpg" %>">
   <% end %>
-  <div class="header_right">
-    <%= link_to 'どういうサイト?', home_about_path, class: "link2" %>
-    <% if user_signed_in? %>
-    <%= link_to '新規投稿', new_post_path, class: "link2" %>
-    <%= link_to 'ログアウト', destroy_user_session_path, data: { confirm: 'まじで？' }, method: :delete, class: "link2" %>
-    <%= link_to 'マイページ', user_path(current_user.id), class: "link2" %>
-    <% else %>
-    <%= link_to '新規登録', new_user_registration_path, class: "link2" %>
-    <%= link_to 'ログイン',new_user_session_path, class: "link2" %>
-    <% end %>
-    <i id="search_show", class="fa fa-search header_search"></i>
+  <i class="fa fa-bars", id="open_menu"></i>
+</div>
+<div class="header_menu_wrapper">
+  <div class="header_right", id="menu">
+  <div class="header_right_container">
+  <%= link_to 'どういうサイト?', home_about_path, class: "link2" %>
+  <% if user_signed_in? %>
+  <%= link_to '新規投稿', new_post_path, class: "link2" %>
+  <%= link_to 'ログアウト', destroy_user_session_path, data: { confirm: 'まじで？' }, method: :delete, class: "link2" %>
+  <%= link_to 'マイページ', user_path(current_user.id), class: "link2" %>
+  <% else %>
+  <%= link_to '新規登録', new_user_registration_path, class: "link2" %>
+  <%= link_to 'ログイン',new_user_session_path, class: "link2" %>
+  <% end %>
+  <i id="search_show", class="fa fa-search header_search"></i>
+  <i class="fa fa-angle-up", id="close_menu"></i>
+  </div>
   </div>
 </div>

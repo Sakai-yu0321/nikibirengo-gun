@@ -15,47 +15,48 @@
 ## DEMO
 
 ##### ユーザー新規登録
-[![Image from Gyazo](https://i.gyazo.com/5494ab03759c1772186025a65ec3548b.gif)](https://gyazo.com/5494ab03759c1772186025a65ec3548b)
+[![Image from Gyazo](https://i.gyazo.com/80c0f17cbaab86a5fd952f10c97c7591.gif)](https://gyazo.com/80c0f17cbaab86a5fd952f10c97c7591)
 
 #### 新規投稿
-[![Image from Gyazo](https://i.gyazo.com/39c00ebfa841492498df0abe885e461f.gif)](https://gyazo.com/39c00ebfa841492498df0abe885e461f)
+[![Image from Gyazo](https://i.gyazo.com/1d749c54ec886e17a5cafef3c31f0fd1.gif)](https://gyazo.com/1d749c54ec886e17a5cafef3c31f0fd1)
 
 #### 投稿詳細
-[![Image from Gyazo](https://i.gyazo.com/e38edf011d826aeac6bc5ba4edebb9b3.gif)](https://gyazo.com/e38edf011d826aeac6bc5ba4edebb9b3)
+[![Image from Gyazo](https://i.gyazo.com/497c12a1421906b96523185af550a625.gif)](https://gyazo.com/497c12a1421906b96523185af550a625)
 
 #### 次の投稿へ進む、前の投稿に戻る
-[![Image from Gyazo](https://i.gyazo.com/86d3390d55c826647a63dfac76ce4115.gif)](https://gyazo.com/86d3390d55c826647a63dfac76ce4115)
+[![Image from Gyazo](https://i.gyazo.com/1fa3eb9a649690d66226ca675ab9781b.gif)](https://gyazo.com/1fa3eb9a649690d66226ca675ab9781b)
 
 #### 投稿編集
-[![Image from Gyazo](https://i.gyazo.com/7d9112b05bfc55b169fd7e45111975f4.gif)](https://gyazo.com/7d9112b05bfc55b169fd7e45111975f4)
+[![Image from Gyazo](https://i.gyazo.com/3a767cef4b0248c9d9fa0c1801d593b3.gif)](https://gyazo.com/3a767cef4b0248c9d9fa0c1801d593b3)
 
 #### 投稿削除
-[![Image from Gyazo](https://i.gyazo.com/80a861ea384e154114b411961ee14a1c.gif)](https://gyazo.com/80a861ea384e154114b411961ee14a1c)
+[![Image from Gyazo](https://i.gyazo.com/346943967685b7b70ffa22e9b82f72f1.gif)](https://gyazo.com/346943967685b7b70ffa22e9b82f72f1)
 
 #### コメント投稿
-[![Image from Gyazo](https://i.gyazo.com/0fcc5c67fa3074141584240bdb46947f.gif)](https://gyazo.com/0fcc5c67fa3074141584240bdb46947f)
+[![Image from Gyazo](https://i.gyazo.com/47fd7a7dd4032db1eaad5998d04c19bb.gif)](https://gyazo.com/47fd7a7dd4032db1eaad5998d04c19bb)
 
 #### コメント削除
-[![Image from Gyazo](https://i.gyazo.com/2eb8151552cad2372d9e3f0869d50099.gif)](https://gyazo.com/2eb8151552cad2372d9e3f0869d50099)
+[![Image from Gyazo](https://i.gyazo.com/4770fd04f6511c34219f7bbaf6159381.gif)](https://gyazo.com/4770fd04f6511c34219f7bbaf6159381)
 
 #### いいね、いいね取り消し
-[![Image from Gyazo](https://i.gyazo.com/303547c78a4f1f0db36780a61b7af227.gif)](https://gyazo.com/303547c78a4f1f0db36780a61b7af227)
+[![Image from Gyazo](https://i.gyazo.com/109adb1fc45b31790e861373d38ce4e0.gif)](https://gyazo.com/109adb1fc45b31790e861373d38ce4e0)
 
 #### マイページ機能
-[![Image from Gyazo](https://i.gyazo.com/d3f523027e34cb0026ce9b34db875992.gif)](https://gyazo.com/d3f523027e34cb0026ce9b34db875992)
+[![Image from Gyazo](https://i.gyazo.com/ea87dbe0e54f07b9e2a729f52535167d.gif)](https://gyazo.com/ea87dbe0e54f07b9e2a729f52535167d)
 ##### 自分の投稿や自分がいいねした投稿を、一覧で見ることができます。
 
-#### ログアウト
-[![Image from Gyazo](https://i.gyazo.com/2cc880bfe857abc403764cf6d77ed01a.gif)](https://gyazo.com/2cc880bfe857abc403764cf6d77ed01a)
-
 #### 投稿ワード検索
-[![Image from Gyazo](https://i.gyazo.com/4221ac70cb564af9cd0e2a5d2aedd713.gif)](https://gyazo.com/4221ac70cb564af9cd0e2a5d2aedd713)
+[![Image from Gyazo](https://i.gyazo.com/9466b411f141339c3109d1ac2c2dd1ac.gif)](https://gyazo.com/9466b411f141339c3109d1ac2c2dd1ac)
 
 #### 投稿カテゴリ検索
-[![Image from Gyazo](https://i.gyazo.com/94f788d55c94e9790441899fb2a1d179.gif)](https://gyazo.com/94f788d55c94e9790441899fb2a1d179)
+[![Image from Gyazo](https://i.gyazo.com/6a7882abacf5860f9ee253efac27ee83.gif)](https://gyazo.com/6a7882abacf5860f9ee253efac27ee83)
 
 #### お問い合わせフォーム
-[![Image from Gyazo](https://i.gyazo.com/5c828fd8e595ff40259d0a5f958d0049.gif)](https://gyazo.com/5c828fd8e595ff40259d0a5f958d0049)
+[![Image from Gyazo](https://i.gyazo.com/a7eef126633384cd99bdd4325c589d0a.gif)](https://gyazo.com/a7eef126633384cd99bdd4325c589d0a)
+
+#### ログアウト
+[![Image from Gyazo](https://i.gyazo.com/393ecc8be405eaa54217c61619717c4f.gif)](https://gyazo.com/393ecc8be405eaa54217c61619717c4f)
+
 
 ## 工夫したポイント
 
@@ -67,10 +68,13 @@
 ##### Ruby, Ruby on Rails
 
 ### フロントエンド
-##### HTML, CSS, javaScript(JQuery) 
+##### HTML, CSS, JQuery
 
 ### データベース
-##### MySQL, Sequel Pro
+##### MySQL, Sequel Pro, S3
+
+### デプロイ
+##### heroku
 
 ### ソース管理
 ##### GitHub
@@ -81,7 +85,7 @@
 ### エディタ
 ##### VSCode
 
-#### HTML・CSS・Ruby・Ruby on Rails・jQuary・RSpec
+#### HTML・CSS・Ruby・Ruby on Rails・jQuery・RSpec
 
 ## 課題や今後実装したい機能
 

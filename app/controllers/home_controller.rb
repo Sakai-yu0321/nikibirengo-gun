@@ -4,4 +4,8 @@ class HomeController < ApplicationController
 
   def contact
   end
+
+  def react_page
+  end
 end
+  

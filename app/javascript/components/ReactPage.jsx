@@ -1,7 +1,6 @@
 import React from "react"
 import { useState } from "react"; 
 import styled from "styled-components";
-import { Button } from "./Button";
 import { Image } from "./Image";
 import { SecondImage } from "./SecondImage";
 
@@ -12,25 +11,36 @@ const Container = styled.div`
   align-items: center;
 `
 
+const TabButton = styled.div`
+  height: 50px;
+  width: 220px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+`
+const Button = styled.button`
+  height: 23px;
+`
+
 function ReactPage() {
   const [word, setWord] = useState('なんだよやんのか');
   const [tab, setTab] = useState('ニキビちゃん');
+
   return (
     <Container>
-      <div>
-        <button onClick={() => setTab('ニキビ大魔神')}>
-          ニキビ大魔神
-        </button>
-        <button onClick={() => setTab('ニキビちゃん')}>
+      <TabButton>
+        <Button onClick={() => setTab('ニキビちゃん')}>
           ニキビちゃん
-        </button>
-      </div>
+        </Button>
+        <Button onClick={() => setTab('ニキビ大魔神')}>
+          ニキビ大魔神
+        </Button>
+      </TabButton>
       {
         tab === 'ニキビちゃん' ?
-        <Image word={word}/> :
-        <SecondImage word={word}/>
+        <Image word={word} setWord={setWord} /> :
+        <SecondImage word={word} setWord={setWord}/>
       }
-      <Button setWord={setWord}/>
     </Container>
   )
 }

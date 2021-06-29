@@ -1,7 +1,3 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 .about_app{
   width: 100vw;
 }
@@ -103,18 +99,4 @@
 .contact_form_to_root_path{
   margin-top: 50px;
   margin-bottom: 200px;
-}
-
-/* react_page */
-
-.react_page_to_root_path{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 180px;
-}
-
-.react_page_title{
-  display: flex;
-  justify-content: center;
 }

@@ -1,8 +1,5 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* posts_index */
 
-// posts index
 .wrapper::before{
   background: url("/images/background_nikibikun.PNG") no-repeat center;
   background-size: cover;
@@ -165,7 +162,7 @@
   z-index: 20;
 }
 
-// posts new
+/* posts_new */
 
 .new_post_page{
   margin-bottom: 200px;
@@ -276,7 +273,7 @@
   border-radius: 10px;
 }
 
-//post_show
+/* posts_show */
 
 .post_show_container{
   background-color: #2a2a2a;
@@ -448,7 +445,7 @@
   margin-right: 8px;
 }
 
-// post_edit
+/* posts_edit */
 
 .edit_post_btn_items{
   display: flex;

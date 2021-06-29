@@ -3,12 +3,34 @@ import { useState } from "react";
 import styled from "styled-components";
 import { Image } from "./Image";
 import { SecondImage } from "./SecondImage";
+import { Form } from "./Form";
 
 const Container = styled.div`
   margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
+`
+
+const CatchCopy = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+  margin-bottom: -700px;
+  z-index: -1;
+`
+
+const UnbeatableBattle = styled.img`
+  width: 80px;
+  margin-right: 150px;
+`
+
+const ItIsHere = styled.img`
+  width: 80px;
+  margin-left: 150px;
 `
 
 const TabButton = styled.div`
@@ -28,6 +50,12 @@ function ReactPage() {
 
   return (
     <Container>
+      <CatchCopy>
+        <ItIsHere
+        src={"/images/ここにある.jpg"} alt='image'/>
+        <UnbeatableBattle
+        src={"/images/負けられない戦いが.jpg"} alt='image'/>
+        </CatchCopy>
       <TabButton>
         <Button onClick={() => setTab('ニキビちゃん')}>
           ニキビちゃん
@@ -41,6 +69,7 @@ function ReactPage() {
         <Image word={word} setWord={setWord} /> :
         <SecondImage word={word} setWord={setWord}/>
       }
+      <Form />
     </Container>
   )
 }

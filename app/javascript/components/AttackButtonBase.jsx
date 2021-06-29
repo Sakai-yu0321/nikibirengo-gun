@@ -15,10 +15,10 @@ const AButton = styled.button`
 
 export const AttackButtonBase = (props) => {
   const setWord = props.setWord;
-  const reaction = props.reaction;
   return (
-    <AButton onClick={() => setWord(reaction)}>
+    <AButton onClick={() => setWord(props.reaction)}>
       { props.children }
     </AButton>
   )
 }
+

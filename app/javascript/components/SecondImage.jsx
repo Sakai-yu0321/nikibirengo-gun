@@ -42,7 +42,7 @@ export const SecondImage = (props) => {
   },[])
   return (
     <div>
-      <Title>ニキビ大魔神へのいたずらコーナー</Title> 
+      <Title>ニキビ大魔神お仕置きコーナー</Title> 
       <MainImage src={"/images/ニキビ大魔神.jpg"} alt='image'/>
       <Word>{word}</Word>
       <Buttons>

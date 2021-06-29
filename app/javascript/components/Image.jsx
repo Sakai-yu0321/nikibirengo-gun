@@ -42,7 +42,7 @@ export const Image = (props) => {
   },[])
   return (
     <div>
-      <Title>ニキビちゃんへのいたずらコーナー</Title> 
+      <Title>ニキビちゃんお仕置きコーナー</Title> 
       <MainImage src={"/images/吹き出し.jpg"} alt='image'/>
       <Word>{word}</Word>
       <Buttons>

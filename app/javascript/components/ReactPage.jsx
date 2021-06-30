@@ -3,7 +3,6 @@ import { useState } from "react";
 import styled from "styled-components";
 import { Image } from "./Image";
 import { SecondImage } from "./SecondImage";
-import { Form } from "./Form";
 
 const Container = styled.div`
   margin-top: 150px;
@@ -69,7 +68,6 @@ function ReactPage() {
         <Image word={word} setWord={setWord} /> :
         <SecondImage word={word} setWord={setWord}/>
       }
-      <Form />
     </Container>
   )
 }

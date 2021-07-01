@@ -28,15 +28,14 @@ const Word = styled.div`
   z-index: 20;
 `
 
-const Buttons = styled.div`
-  width: 400px;
-  display: flex;
-  justify-content: space-around;
-`
-
 export const Image = (props) => {
   const word = props.word;
   const setWord = props.setWord;
+  const ACTIONS = [
+    {action: 'キック', reaction: 'いてぇ'},
+    {action: 'パンチ', reaction: 'やったな！'},
+    {action: 'ビンタ', reaction: 'いやん'},
+  ];
   useEffect(() => {
     setWord('なんだよやんのか')
   },[])
@@ -45,17 +44,7 @@ export const Image = (props) => {
       <Title>ニキビちゃんお仕置きコーナー</Title> 
       <MainImage src={"/images/吹き出し.jpg"} alt='image'/>
       <Word>{word}</Word>
-      <Buttons>
-        <AttackButtonBase setWord={setWord} reaction={'痛え'}>
-          キック
-        </AttackButtonBase>
-        <AttackButtonBase setWord={setWord} reaction={'ふげぇ！'}>
-          パンチ
-        </AttackButtonBase>
-        <AttackButtonBase setWord={setWord} reaction={'いやん！'}>
-          ビンタ
-        </AttackButtonBase>
-      </Buttons>
+      <AttackButtonBase setWord={setWord} ACTIONS={ACTIONS}/>
     </div>
   )
 }

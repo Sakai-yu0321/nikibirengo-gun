@@ -1,7 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { AttackButtonBase } from "./AttackButtonBase";
+import { Form } from './Form';
+
+const ImageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 
 const Title = styled.div`
   background-color: #2a2a2a;
@@ -36,15 +43,20 @@ export const Image = (props) => {
     {action: 'ニキビパッチを被せる', reaction: 'グアぁ！'},
     {action: '皮膚科に行く', reaction: 'まいりました！'},
   ];
+
+  const [attack, setAttack] = useState(ACTIONS);
+
   useEffect(() => {
     setWord('なんだよやんのか')
   },[])
+
   return (
-    <div>
+    <ImageContainer>
       <Title>ニキビちゃんお仕置きコーナー</Title> 
       <MainImage src={"/images/吹き出し.jpg"} alt='image'/>
       <Word>{word}</Word>
-      <AttackButtonBase setWord={setWord} ACTIONS={ACTIONS}/>
-    </div>
+      <AttackButtonBase setWord={setWord} ACTIONS={attack}/>
+      <Form setAttack={setAttack} ACTIONS={ACTIONS}/>
+    </ImageContainer>
   )
 }

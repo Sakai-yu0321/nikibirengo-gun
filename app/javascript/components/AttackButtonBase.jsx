@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Buttons = styled.div`
-  width: 400px;
   display: flex;
   justify-content: space-around;
 `
@@ -13,6 +12,7 @@ const Button = styled.button`
   padding: 20px;
   border-radius: 50px;
   color: white;
+  margin: 0px 2px;
   :active {
     position: relative;
     bottom: -3px;

@@ -35,9 +35,9 @@ export const SecondImage = (props) => {
     setWord('かかってこいや')
   },[])
   const ACTIONS = [
-    {action: 'つぶす', reaction: 'ニキビ跡になってやる'},
-    {action: 'ニキビパッチを被せる', reaction: 'グアぁ！'},
-    {action: '皮膚科に行く', reaction: 'まいりました！'},
+    {action: 'キック', reaction: 'いてぇ'},
+    {action: 'パンチ', reaction: 'やったな！'},
+    {action: 'ビンタ', reaction: 'いやん'},
   ];
   return (
     <div>

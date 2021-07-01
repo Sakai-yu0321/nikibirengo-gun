@@ -32,9 +32,9 @@ export const Image = (props) => {
   const word = props.word;
   const setWord = props.setWord;
   const ACTIONS = [
-    {action: 'キック', reaction: 'いてぇ'},
-    {action: 'パンチ', reaction: 'やったな！'},
-    {action: 'ビンタ', reaction: 'いやん'},
+    {action: 'つぶす', reaction: 'ニキビ跡になってやる'},
+    {action: 'ニキビパッチを被せる', reaction: 'グアぁ！'},
+    {action: '皮膚科に行く', reaction: 'まいりました！'},
   ];
   useEffect(() => {
     setWord('なんだよやんのか')

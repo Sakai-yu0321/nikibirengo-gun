@@ -57,6 +57,10 @@
 #### ログアウト
 [![Image from Gyazo](https://i.gyazo.com/393ecc8be405eaa54217c61619717c4f.gif)](https://gyazo.com/393ecc8be405eaa54217c61619717c4f)
 
+#### ミニゲーム
+[![Image from Gyazo](https://i.gyazo.com/200d8b8e597ff558571312453609a856.png)](https://gyazo.com/200d8b8e597ff558571312453609a856)
+##### url→https://nikibirengo-gun.herokuapp.com/home/react_page
+
 
 ## 工夫したポイント
 
@@ -68,7 +72,7 @@
 ##### Ruby, Ruby on Rails
 
 ### フロントエンド
-##### HTML, CSS, JQuery
+##### HTML, CSS, JQuery, React
 
 ### データベース
 ##### MySQL, Sequel Pro, S3
@@ -84,8 +88,6 @@
 
 ### エディタ
 ##### VSCode
-
-#### HTML・CSS・Ruby・Ruby on Rails・jQuery・RSpec
 
 ## 課題や今後実装したい機能
 

@@ -57,7 +57,7 @@
 #### ログアウト
 [![Image from Gyazo](https://i.gyazo.com/393ecc8be405eaa54217c61619717c4f.gif)](https://gyazo.com/393ecc8be405eaa54217c61619717c4f)
 
-#### ミニゲーム
+#### ミニゲーム(Reactで作成)
 [![Image from Gyazo](https://i.gyazo.com/200d8b8e597ff558571312453609a856.png)](https://gyazo.com/200d8b8e597ff558571312453609a856)
 ##### url→https://nikibirengo-gun.herokuapp.com/home/react_page
 

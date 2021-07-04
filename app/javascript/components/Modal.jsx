@@ -34,7 +34,7 @@ const ButtonContainer = styled.div`
 
 export const Modal = (props) => {
 
-  const submitForm = (e) => {
+  const submitForm = () => {
     props.setAttack([...props.ACTIONS, {action: action, reaction: reaction}]);
   }
 
